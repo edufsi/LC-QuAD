@@ -1,0 +1,11 @@
+sparqlwrapper
+requests
+google-generativeai
+faiss-cpu
+sentence-transformers
+ollama
+datasets
+transformers
+sentencepiece
+protobuf
+accelerate

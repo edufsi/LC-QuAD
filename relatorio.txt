@@ -1,0 +1,39 @@
+📝 Relatório de Bordo: O Caso T5 vs. DBpedia
+1. O Ponto de Partida e o "Xeque-Mate" na Trie
+
+O Setup: Estávamos treinando um T5-small para Semantic Parsing (Text-to-SPARQL linearizado) usando o LC-QuAD, com uma injeção de entidades no prompt (o nosso "Oráculo").
+
+O Problema da Trie: Você percebeu brilhantemente que usar uma Trie restritiva (Dinâmica) na hora da geração forçaria uma "Cascata de Erros" se o recuperador de entidades falhasse. Além disso, validar caminhos multi-hop na Trie em tempo de inferência mataria a performance do sistema.
+
+2. A Aventura do RAG de Relações (Schema Linking)
+
+A Ideia: Para ajudar o modelo a não inventar relações (ex: trocar dbo:riverMouth por dbp:mouthLocation), decidimos injetar as Top-K relações no prompt via RAG.
+
+O Inferno das Dependências (Voodoo Debugging): Enfrentamos crashes silenciosos bizarros tentando usar o sentence-transformers com o faiss. Você descobriu de forma empírica que o erro mudava dependendo dos imports. Consertamos isso com a variável mágica os.environ['KMP_DUPLICATE_LIB_OK'] = 'True', impedindo a guerra de bibliotecas C++ pelo OpenMP.
+
+Viés de Entidade: O RAG começou a ser "sequestrado" pelas entidades (ex: "Marinha" dominava a semântica e escondia palavras como "arquiteto"). Tentamos limpar isso focando apenas em verbos e substantivos usando spaCy.
+
+3. O Choque de Realidade: A "Deriva Temporal" (Temporal Drift)
+
+A Descoberta: Ao tentar validar as relações com queries SPARQL ao vivo, você descobriu que muitas das queries do LC-QuAD 1.0 (de 2017) já não existem na DBpedia de 2024.
+
+A Purga: Escrevemos um script turbo (com requests.Session()) para testar o dataset inteiro. Descobrimos que cerca de 50% dos dados estavam "mortos". Decidimos criar um dataset purgado só com as verdades absolutas sobreviventes (cerca de 2.150 perguntas no treino).
+
+4. O Plot Twist Final: Data Starvation (Inanição de Dados)
+
+O Estudo de Ablação: Com o dataset reduzido pela metade, treinamos o T5 com e sem o RAG. A loss caiu para 0.040, mas foi uma ilusão (Overfitting).
+
+O Sintoma: O modelo sofreu "amnésia estrutural". Sem o volume dos 4.000 dados originais, ele desaprendeu a gramática do Grafo. Começou a trocar posições de [VAR1], ignorar o [SEP] e inventar propriedades bizarras que nem existiam (dbo:foundeer).
+
+A Conclusão sobre o RAG: Além da falta de dados, colocar 25 relações no prompt estourou o limite de tokens, cortando a própria pergunta e distraindo o modelo. E mesmo ajustando (K=5, prompt invertido, tokens=256), a falta de volume do dataset purgado cobrou seu preço.
+
+🎯 O Veredicto Atual (A Nossa "Master Branch" de agora)
+A engenharia nos ensinou da pior forma que para LLMs pequenos, volume de gramática importa mais do que verdades factuais absolutas.
+
+A melhor arquitetura validada até agora é o "Retorno às Origens":
+
+Dataset: Voltar a usar os 4.000 dados originais completos (aceitando que algumas relações de 2017 não existem mais hoje, pois o objetivo principal do modelo é aprender a estrutura lógica).
+
+RAG de Relações: Descartado. Ele insere ruído no prompt e confunde o T5.
+
+Injeção no Prompt: Manter apenas o Oráculo de Entidades (Entities possibly involved: ...), que se provou super estável e ancora o modelo sem causar colapso de atenção.

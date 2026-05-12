@@ -1,0 +1,20 @@
+
+==================================================
+📊 RELATÓRIO DE AVALIAÇÃO: T5-Small vs DBpedia (Com RAG)
+Data: 2026-05-10 17:12:12
+==================================================
+
+DESCRITIVO DO EXPERIMENTO:
+Modelo treinado com 4k exemplos. Injeção de entidades via Oráculo.
+Dataset original (não purgado) para manter densidade gramatical.
+Modelo com acesso a RAG de relações com k=5, RAG gerado por sentence transformer na entrada e gerando os embeddings das relações
+Sem Trie limitando o vocabulário de saída, sem corretor de saída
+
+MÉTRICAS (Amostras: 559):
+--------------------------------------------------
+🎯 Exact Match (Lógica + URI): 0.00%
+🧩 Skeleton Match (Lógica Pura): 11.45%
+✅ Precisão Média de Triplas: 0.0499
+📈 Recall Médio de Triplas: 0.0638
+👻 Média de URIs Alucinadas: 3.28
+==================================================

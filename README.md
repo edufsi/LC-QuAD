@@ -1,94 +1,42 @@
- # LC-QuAD
-## Largescale Complex Question Answering Dataset
+# LC-QuAD (Fork de Experimentos KBQA)
 
-##  :loudspeaker: Announcement: LCQUAD 2.0 is now released, checkout our website http://lc-quad.sda.tech .
+Este projeto implementa um pipeline de **pergunta em linguagem natural → caminho/URIs da DBpedia**.
 
-### Download 
- :hatching_chick: [Train](train-data.json), [Test](test-data.json) Data 
- 
-### Links
-:earth_africa: [Webpage](http://lc-quad.sda.tech/) | :page_facing_up: [Paper](http://lc-quad.sda.tech/static/ISWC2017_paper_152.pdf) | :office: [Lab](http://sda.cs.uni-bonn.de/)
+Pelo histórico em `relatorio.txt`, a linha atual validada é:
+- treino do **T5-small** com os ~4k exemplos originais (sem purga),
+- uso do **Oráculo de Entidades** no prompt,
+- **sem RAG de relações** e **sem Trie** na configuração principal.
 
-### Introduction
+## Função de cada script Python
 
-We release, and maintain a _gold standard_ KBQA (Question Answering over Knowledge Base) dataset 
-containing 5000 Question and SPARQL queries.
-LC-QuAD uses [DBpedia v04.16](https://wiki.dbpedia.org/dbpedia-version-2016-04) as the target KB.
+| Script | Função |
+|---|---|
+| `api_gemini.py` | Corrige relações alucinadas em predições (`dbo:/dbp:`) comparando com propriedades reais da DBpedia e similaridade semântica. |
+| `aplicar_correcao.py` | Baseline zero-shot com Gemini + Spotlight + vocabulário completo de relações; roda em lote e salva resultados com checkpoint. |
+| `avaliador_metricas.py` | Avaliador orientado a classe (`DBpediaEvaluator`) com Exact Match, Skeleton Match, precisão/recall de triplas e alucinações. |
+| `avaliar_metricas.py` | Avaliação funcional das mesmas métricas, gerando relatório textual de desempenho de predições. |
+| `baseline_ollama_zeroshot.py` | Baseline zero-shot puro em Ollama (sem contexto externo), em lote, com retomada por arquivo de saída. |
+| `cuda_availability_check.py` | Verificação rápida de disponibilidade CUDA e nome da GPU no PyTorch. |
+| `dbpedia_spotlight.py` | Extrai URIs candidatas do Spotlight para perguntas do LC-QuAD e gera dataset com ruído realista. |
+| `extrair_uris_por_query.py` | Extrai URIs diretamente da `sparql_query` e gera JSON simplificado (`id`, `question`, `target_uris`). |
+| `fine_tuning_t5.py` | Fine-tuning do T5 (`google-t5/t5-small`) com datasets CSV (`input_text`/`target_text`) e `Seq2SeqTrainer`. |
+| `gerador_grafo.py` | Expande subgrafo DBpedia a partir de URIs semente, em paralelo, com retry/backoff e log de progresso. |
+| `gerador_grafo_relacoes.py` | Faz data augmentation por relação: lê predicados do grafo local e busca exemplos adicionais na DBpedia. |
+| `get_dbpedia_relations.py` | Baixa relações DBpedia por paginação (`LIMIT/OFFSET`) e salva lista consolidada. |
+| `get_english_dbpedia_relations.py` | Constrói vocabulário universal de relações por varredura alfabética e normalização de prefixos. |
+| `inferencia_framework.py` | Framework de benchmark com estratégias de geração (CSV puro e modo com Trie restritiva). |
+| `limpar_dataset_dbpedia.py` | Purga dataset removendo exemplos cuja query não retorna resposta válida no endpoint DBpedia atual. |
+| `linearizar_queries.py` | Converte SPARQL em alvo linearizado (`A >> p >> B [SEP] ...`) com normalização de variáveis. |
+| `list_models.py` | Lista modelos do Gemini disponíveis para `generateContent`. |
+| `ollama_rag.py` | Pipeline experimental RAG com embeddings + FAISS + Spotlight e geração local via Ollama. |
+| `preparar_dados_t5.py` | Gera CSVs de treino/teste para T5: monta prompt com entidades (e suporte comentado a RAG de relações) e lineariza SPARQL. |
+| `recuperador_entidades.py` | Recuperador “Oráculo” (perfect retriever): encontra a pergunta no dataset e retorna entidades `dbr:`. |
+| `recuperador_relacoes.py` | Recuperador semântico de relações com FastEmbed (ONNX) e similaridade de cosseno em memória. |
+| `recuperador_relacoes_faiss.py` | Recuperador de relações com SentenceTransformer + FAISS + limpeza linguística via spaCy. |
+| `recuperador_relacoes_grafo.py` | Graph-RAG ancorado no endpoint: busca propriedades reais das entidades e ranqueia semanticamente. |
+| `testar_t5_local.py` | Interface interativa mínima para inferência local do T5 sem injeções extras. |
+| `testar_t5_local_com_recuperador_entidade_e_relacao.py` | Inferência T5 com injeção de entidades (oráculo) e relações candidatas (FAISS RAG). |
+| `testar_t5_local_com_recuperador_entidades.py` | Inferência T5 com injeção apenas de entidades recuperadas pelo oráculo. |
+| `testar_t5_local_com_recuperador_entidades_e_trie.py` | Inferência com decodificação restrita por Trie dinâmica (entidades + ontologia + tokens estruturais). |
+| `teste_spacy.py` | Sandbox para extrair palavras-chave (verbos/substantivos) e testar limpeza semântica para RAG. |
 
-### Usage
-
-**License**: You can download the dataset (released with a [GPL 3.0 License](LICENSE.txt)), or read below to know more.
-
-**Versioning**: We use [DBpedia version 04-2016](https://wiki.dbpedia.org/dbpedia-version-2016-04) as our target KB. The public DBpedia endpoint (http://dbpedia.org/sparql) no longer uses this version, which might cause many SPARQL queries to not retrieve any answer.
-We _strongly_ recommend hosting this version locally. To do so, see [this guide](https://github.com/harsh9t/Dockerised-DBpedia-Virtuoso-Endpoint-Setup-Guide)
-
-**Splits**: We release the dataset split into _training_, and _test_ in a 80:20 fashion.
-
-**Format**: The dataset is released in JSON dumps, where the key 
-`corrected_question` contains the question, and `query` contains the corresponding SPARQL query. 
-
-The dataset generated has the following JSON structure, kept intact for . 
-```
-{
- 	'_id': 'Unique ID of this datapoint',
-  	'corrected_question': 'Corrected, Final Question',
-	'id': 'Template ID',
-	'query': 'SPARQL Query',
-	'template': 'Template used to create SPARQL Query',
-	'intermediary_question': 'Automatically generated, grammatically incorrect question'
-}
-```
-
-### Cite
-```
-@inproceedings{trivedi2017lc,
-  title={Lc-quad: A corpus for complex question answering over knowledge graphs},
-  author={Trivedi, Priyansh and Maheshwari, Gaurav and Dubey, Mohnish and Lehmann, Jens},
-  booktitle={International Semantic Web Conference},
-  pages={210--218},
-  year={2017},
-  organization={Springer}
-}
-```
-
-### Benchmarking/Leaderboard
-
-We're in the process of automating the benchmarking process (and updating results on our [webpage](http://lc-quad.sda.tech)).
-In the meantime, please get in touch with us at priyansh.trivedi@uni-bonn.de, and we'll do it manually.
-Apologies for this inconvinience.
-
-### Methodology 
-
-**Overview**
-- Automatically create **SPARQL** queries.
-- Convert SPARQL queries to _intermediary NLQs._
-- Manually correct intermediary NLQs to create **Questions**
-
-We start with a set of [Seed Entities](resources/entities.txt), and [Predicate Whitelist](resources/predicates.txt).
-Using the whitelist, we generate 2-hop subgraphs around seed entities.
-With a seed entity as _supposed_ answer, we juxtapose [SPARQL Templates](resources/templates.json) onto the subgraph, and generate SPARQL queries.
-
-Corresponding to SPARQL template, and based on certain conditions, we assign hand-made NL question templates to the SPARQLs.
-_Refer to [this diagram](resources/nomenclature.png) to understand the nomenclature used in templates._
-
-Finally, we follow a two-step (Correct, Review) system to generate a grammatically correct question for every template-generated one.
-
-### Changelog
-
-#### 0.1.3 - 19-06-2018
-- Published train-test splits
-- Website Updated
-
-#### 0.1.2 - 28-01-2018
-- Updated public website
-- Dataset now available in QALD format
-- Leaderboard underway
-
-#### 0.1.1 -  27-10-2017
-- Fixed a bug with rdf:type filter in SPARQL
-- data_set.json updated
-- updated templates.py
-
-#### 0.1.0 - 01-05-2017
-- First version released
-- [lc-quad.sda.tech](http://lc-quad.sda.tech) published

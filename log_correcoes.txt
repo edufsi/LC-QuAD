@@ -1,0 +1,3050 @@
+=== INÍCIO DO LOG DE CORREÇÕES (Threshold: 0.6) ===
+
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:New_Sanno_Hotel
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Marine_Corps_Air_Station_Kaneohe_Bay
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Muslim_Brotherhood
+
+[REJEITADO] Pergunta ID: 2 | Entidade-Foco: dbr:Google_Web_Toolkit
+  ❌ Alucinado: dbp:developer
+  ⚠️ Melhor opção encontrada: dbp:programmingLanguage (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 2 | Entidade-Foco: dbr:Google_Videos
+  ❌ Alucinado: dbp:writer
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 5 | Entidade-Foco: dbr:Dream_Dancing_(album)
+  ❌ Alucinado: dbo:associate
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 7 | Entidade-Foco: dbr:Focke-Wulf_Fw_260
+  ❌ Alucinado: dbp:destinations
+  ⚠️ Melhor opção encontrada: dbp:rangeMiles (Score: 0.36 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 7 | Entidade-Foco: dbr:Start_+_Flug_H-101
+  ❌ Alucinado: dbp:destinations
+  ⚠️ Melhor opção encontrada: dbp:firstFlight (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 8 | Entidade-Foco: dbr:Erik_Jendresen
+  ❌ Alucinado: dbp:producer
+  ✅ Trocado p/: dbo:producer (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:producer (1.00), dbo:executiveProducer (0.78), dbo:writer (0.53)]
+  Aqui está errado segundo o próprio gabarito. Deveria ser dbp:producer mesmo pelo gabarito, mas na dbpedia atual está dbo:producer
+
+[CORREÇÃO] Pergunta ID: 8 | Entidade-Foco: dbr:Stephen_E._Ambrose
+  ❌ Alucinado: dbp:writer
+  ✅ Trocado p/: dbp:author (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbp:author (0.70), dbo:author (0.70), dbo:producer (0.53)]
+Era pra ser producer...
+
+[REJEITADO] Pergunta ID: 9 | Entidade-Foco: dbr:L'Enfant_a_la_tasse
+  ❌ Alucinado: dbp:creators
+  ⚠️ Melhor opção encontrada: dbo:author (Score: 0.54 - ABAIXO DO LIMITE 0.6)
+Era pra ser dbp:artist
+
+[REJEITADO] Pergunta ID: 9 | Entidade-Foco: dbr:Women_in_the_Garden
+  ❌ Alucinado: dbp:creators
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.28 - ABAIXO DO LIMITE 0.6)
+Era pra ser dbp:artist
+
+[REJEITADO] Pergunta ID: 10 | Entidade-Foco: dbr:Fergie_Sutherland
+  ❌ Alucinado: dbp:knownFor
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+Era pra ser dbp:race
+
+[REJEITADO] Pergunta ID: 10 | Entidade-Foco: dbr:War_Of_Attrition_(horse)
+  ❌ Alucinado: dbp:knownFor
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+Bem ruim
+
+[REJEITADO] Pergunta ID: 11 | Entidade-Foco: dbr:Prime_Time_Entertainment_Network
+  ❌ Alucinado: dbo:artist
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 12 | Entidade-Foco: dbr:World_War_II
+  ❌ Alucinado: dbo:battles
+  ✅ Trocado p/: dbp:battles (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:battles (1.00), dbo:battle (0.94), dbp:warsAndBattles (0.84)]
+ACERTOU!
+
+[REJEITADO] Pergunta ID: 15 | Entidade-Foco: dbr:Battle_Chess
+  ❌ Alucinado: dbo:port
+  ⚠️ Melhor opção encontrada: dbp:platforms (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 15 | Entidade-Foco: dbr:Vishwajyot_High_School
+  ❌ Alucinado: dbo:genre
+  ⚠️ Melhor opção encontrada: dbo:language (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 16 | Entidade-Foco: dbr:Channel_District
+  ❌ Alucinado: dbp:district
+  ⚠️ Melhor opção encontrada: dbp:city (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 18 | Entidade-Foco: dbr:Raptors_905
+  ❌ Alucinado: dbp:tenants
+  ✅ Trocado p/: dbo:tenant (Score: 0.91)
+  🔍 Top 3 opções avaliadas: [dbo:tenant (0.91), dbo:owner (0.48), dbp:owner (0.48)]
+
+[CORREÇÃO] Pergunta ID: 20 | Entidade-Foco: dbr:Massachusetts_Department_of_Transportation
+  ❌ Alucinado: dbp:operatedBy
+  ✅ Trocado p/: dbo:maintainedBy (Score: 0.61)
+  🔍 Top 3 opções avaliadas: [dbo:maintainedBy (0.61), dbo:occupation (0.50), dbp:occupation (0.50)]
+
+[CORREÇÃO] Pergunta ID: 23 | Entidade-Foco: dbr:Birmingham_and_Oxford_Junction_Railway
+  ❌ Alucinado: dbp:routeEnd
+  ✅ Trocado p/: dbo:routeEnd (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:routeEnd (1.00), dbp:route (0.82), dbo:routeStart (0.77)]
+
+[REJEITADO] Pergunta ID: 24 | Entidade-Foco: dbr:Vitis_vinifera
+  ❌ Alucinado: dbo:origin
+  ⚠️ Melhor opção encontrada: dbp:authority (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 26 | Entidade-Foco: dbr:William_French_Smith
+  ❌ Alucinado: dbp:militaryBranch
+  ✅ Trocado p/: dbo:militaryService (Score: 0.75)
+  🔍 Top 3 opções avaliadas: [dbo:militaryService (0.75), dbo:commander (0.49), dbp:branchLabel (0.46)]
+
+[CORREÇÃO] Pergunta ID: 27 | Entidade-Foco: dbr:Lake_Ontario
+  ❌ Alucinado: dbo:source
+  ✅ Trocado p/: dbp:source (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:source (1.00), dbp:url (0.40), dbp:mouth (0.34)]
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Denver_Broncos
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Steven_Clark_Cunningham
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Emel_(magazine)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:England_national_under-20_football_team
+
+[CORREÇÃO] Pergunta ID: 30 | Entidade-Foco: dbr:England_national_under-21_football_team
+  ❌ Alucinado: dbp:manager
+  ✅ Trocado p/: dbo:managerClub (Score: 0.77)
+  🔍 Top 3 opções avaliadas: [dbo:managerClub (0.77), dbp:managerclubs (0.68), dbo:coach (0.61)]
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Fig_Tree_Bay
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Dubai_World_Cup
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Jawaharlal_Nehru
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:United_Kingdom
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Ralph_J._Gleason
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Barq's
+
+[REJEITADO] Pergunta ID: 43 | Entidade-Foco: dbr:Vostok_programme
+  ❌ Alucinado: dbo:mission
+  ⚠️ Melhor opção encontrada: dbp:purpose (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Suburb
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Whitey_Wistert
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Dragimir_of_Travunia_and_Zachlumia
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Arctic_Ocean
+
+[CORREÇÃO] Pergunta ID: 48 | Entidade-Foco: dbr:Laptev_Sea
+  ❌ Alucinado: dbo:mouthLocation
+  ✅ Trocado p/: dbp:mouthLocation (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:mouthLocation (1.00), dbo:mouthPlace (0.89), dbp:mouth (0.73)]
+
+[REJEITADO] Pergunta ID: 51 | Entidade-Foco: dbr:Ajith_Perera
+  ❌ Alucinado: dbo:religion
+  ⚠️ Melhor opção encontrada: dbp:party (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 55 | Entidade-Foco: dbr:Greater_Napanee
+  ❌ Alucinado: dbo:hometown
+  ✅ Trocado p/: dbp:hometown (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:hometown (1.00), dbo:city (0.69), dbp:city (0.69)]
+
+[CORREÇÃO] Pergunta ID: 56 | Entidade-Foco: dbr:Edwin_Adams_(politician)
+  ❌ Alucinado: dbp:placeOfDeath
+  ✅ Trocado p/: dbp:deathPlace (Score: 0.85)
+  🔍 Top 3 opções avaliadas: [dbp:deathPlace (0.85), dbo:deathPlace (0.85), dbp:birthPlace (0.59)]
+
+[REJEITADO] Pergunta ID: 58 | Entidade-Foco: dbr:RENFE_Class_333
+  ❌ Alucinado: dbp:designer
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.12 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Renaissance_Center
+
+[REJEITADO] Pergunta ID: 59 | Entidade-Foco: dbr:Joshua_A._Siegel
+  ❌ Alucinado: dbp:athletics
+  ⚠️ Melhor opção encontrada: dbp:education (Score: 0.37 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 60 | Entidade-Foco: dbr:Novelas_ejemplares
+  ❌ Alucinado: dbo:knownFor
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 61 | Entidade-Foco: dbr:Essex
+  ❌ Alucinado: dbo:sourceCountry
+  ✅ Trocado p/: dbo:country (Score: 0.73)
+  🔍 Top 3 opções avaliadas: [dbo:country (0.73), dbp:locationCountry (0.70), dbp:origin (0.56)]
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Taiwan
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Gerald_Reaven
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:David_W._Brown_House
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Deion_Sanders
+
+[CORREÇÃO] Pergunta ID: 68 | Entidade-Foco: dbr:Batman_Live
+  ❌ Alucinado: dbo:character
+  ✅ Trocado p/: dbp:characters (Score: 0.88)
+  🔍 Top 3 opções avaliadas: [dbp:characters (0.88), dbo:characterInPlay (0.67), dbp:name (0.47)]
+
+[REJEITADO] Pergunta ID: 70 | Entidade-Foco: dbr:Ford_Y-block_engine
+  ❌ Alucinado: dbo:builder
+  ⚠️ Melhor opção encontrada: dbo:engine (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 73 | Entidade-Foco: dbr:Cartoonito
+  ❌ Alucinado: dbo:sisterStation
+  ✅ Trocado p/: dbp:sisterChannels (Score: 0.72)
+  🔍 Top 3 opções avaliadas: [dbp:sisterChannels (0.72), dbp:channel (0.51), dbo:channel (0.51)]
+
+[REJEITADO] Pergunta ID: 74 | Entidade-Foco: dbr:John_Fanning_(businessman)
+  ❌ Alucinado: dbo:developer
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 75 | Entidade-Foco: dbr:Muhammad_Yunus
+  ❌ Alucinado: dbo:award
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 80 | Entidade-Foco: dbr:Ozzy_Osbourne
+  ❌ Alucinado: dbp:related
+  ⚠️ Melhor opção encontrada: dbo:relative (Score: 0.55 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 80 | Entidade-Foco: dbr:Kelly_Osbourne
+  ❌ Alucinado: dbp:related
+  ⚠️ Melhor opção encontrada: dbp:relatives (Score: 0.59 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 81 | Entidade-Foco: dbr:Pullaiahgaripalli
+  ❌ Alucinado: dbp:leader
+  ⚠️ Melhor opção encontrada: dbp:nickname (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 82 | Entidade-Foco: dbr:99_(2009_film)
+  ❌ Alucinado: dbo:servingRailwayLine
+  ⚠️ Melhor opção encontrada: dbp:note (Score: 0.19 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 83 | Entidade-Foco: dbr:Riley_Reid
+  ❌ Alucinado: dbp:ethnicity
+  ⚠️ Melhor opção encontrada: dbp:gender (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 85 | Entidade-Foco: dbr:Giuseppe_Bertello
+  ❌ Alucinado: dbp:leaderName
+  ⚠️ Melhor opção encontrada: dbp:president (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 86 | Entidade-Foco: dbr:Mount_Moosilauke
+  ❌ Alucinado: dbo:campus
+  ⚠️ Melhor opção encontrada: dbo:locatedInArea (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 87 | Entidade-Foco: dbr:Sanggar_Agung
+  ❌ Alucinado: dbo:architecture
+  ✅ Trocado p/: dbo:architecturalStyle (Score: 0.83)
+  🔍 Top 3 opções avaliadas: [dbo:architecturalStyle (0.83), dbp:architecturalStyle (0.83), dbp:buildingName (0.45)]
+
+[REJEITADO] Pergunta ID: 88 | Entidade-Foco: dbr:C++
+  ❌ Alucinado: dbo:author
+  ⚠️ Melhor opção encontrada: dbp:influencedBy (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 89 | Entidade-Foco: dbr:Vadodara_Junction_railway_station
+  ❌ Alucinado: dbp:garrison
+  ⚠️ Melhor opção encontrada: dbp:depot (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 89 | Entidade-Foco: dbr:Western_Naval_Command
+  ❌ Alucinado: dbp:line
+  ⚠️ Melhor opção encontrada: dbp:title (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 90 | Entidade-Foco: dbr:Steve_Holland_(footballer)
+  ❌ Alucinado: dbp:player
+  ⚠️ Melhor opção encontrada: dbo:team (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 91 | Entidade-Foco: dbr:2014–15_Panionios_G.S.S._season
+  ❌ Alucinado: dbp:locationCity
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 91 | Entidade-Foco: dbr:Mediterranean_Sea
+  ❌ Alucinado: dbp:stadium
+  ⚠️ Melhor opção encontrada: dbp:place (Score: 0.48 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 94 | Entidade-Foco: dbr:Boonchu_Rojanastien
+  ❌ Alucinado: dbo:party
+  ⚠️ Melhor opção encontrada: dbp:leader (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 98 | Entidade-Foco: dbr:Boeing_CH-47_Chinook
+  ❌ Alucinado: dbo:keyPerson
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 98 | Entidade-Foco: dbr:Dennis_Muilenburg
+  ❌ Alucinado: dbp:products
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.37 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 99 | Entidade-Foco: dbr:Giuseppe_Bertello
+  ❌ Alucinado: dbo:leader
+  ⚠️ Melhor opção encontrada: dbp:president (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 100 | Entidade-Foco: dbr:One_Day_at_a_Time_(Em's_Version)
+  ❌ Alucinado: dbp:subsequentWork
+  ⚠️ Melhor opção encontrada: dbo:Work/runtime (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 103 | Entidade-Foco: dbr:Language_Integrated_Query
+  ❌ Alucinado: dbo:license
+  ⚠️ Melhor opção encontrada: dbp:developer (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 103 | Entidade-Foco: dbr:MSX_BASIC
+  ❌ Alucinado: dbo:designer
+  ⚠️ Melhor opção encontrada: dbp:developer (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 105 | Entidade-Foco: dbr:NASA
+  ❌ Alucinado: dbo:associatedBy
+  ⚠️ Melhor opção encontrada: dbp:affiliation (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 108 | Entidade-Foco: dbr:Ganges
+  ❌ Alucinado: dbo:city
+  ✅ Trocado p/: dbo:location (Score: 0.65)
+  🔍 Top 3 opções avaliadas: [dbo:location (0.65), dbp:location (0.65), dbp:place (0.56)]
+
+[REJEITADO] Pergunta ID: 109 | Entidade-Foco: dbr:Heinz_Field
+  ❌ Alucinado: dbo:homeStadium
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 110 | Entidade-Foco: dbr:Burnet_R._Maybank
+  ❌ Alucinado: dbp:architect
+  ⚠️ Melhor opção encontrada: dbp:appointer (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 111 | Entidade-Foco: dbr:Akiva_Goldsman
+  ❌ Alucinado: dbo:screenplay
+  ✅ Trocado p/: dbp:screenplay (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:screenplay (1.00), dbp:writer (0.60), dbo:writer (0.60)]
+
+[REJEITADO] Pergunta ID: 113 | Entidade-Foco: dbr:Battle_of_Fort_Stephenson
+  ❌ Alucinado: dbp:importantMembers
+  ⚠️ Melhor opção encontrada: dbp:casualties (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 114 | Entidade-Foco: dbr:Gerard_Marino
+  ❌ Alucinado: dbo:noteComposer
+  ✅ Trocado p/: dbp:composer (Score: 0.81)
+  🔍 Top 3 opções avaliadas: [dbp:composer (0.81), dbo:composer (0.81), dbo:musicComposer (0.78)]
+
+[CORREÇÃO] Pergunta ID: 115 | Entidade-Foco: dbr:Kaliningrad
+  ❌ Alucinado: dbo:cities
+  ✅ Trocado p/: dbp:cities (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:cities (1.00), dbp:city (0.87), dbo:city (0.87)]
+
+[CORREÇÃO] Pergunta ID: 115 | Entidade-Foco: dbr:Rostock
+  ❌ Alucinado: dbo:cities
+  ✅ Trocado p/: dbp:cities (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:cities (1.00), dbp:city (0.87), dbo:city (0.87)]
+
+[CORREÇÃO] Pergunta ID: 116 | Entidade-Foco: dbr:Isaac_Hayes
+  ❌ Alucinado: dbp:voices
+  ✅ Trocado p/: dbo:voice (Score: 0.88)
+  🔍 Top 3 opções avaliadas: [dbo:voice (0.88), dbp:music (0.56), dbp:artist (0.40)]
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Stevens_Thomson_Mason_(Virginia)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Angels_Toru
+
+[CORREÇÃO] Pergunta ID: 122 | Entidade-Foco: dbr:Jared_Kushner
+  ❌ Alucinado: dbp:relatives
+  ✅ Trocado p/: dbp:parents (Score: 0.67)
+  🔍 Top 3 opções avaliadas: [dbp:parents (0.67), dbo:parent (0.61), dbp:spouse (0.49)]
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:John_Bowlby
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Blade_Runner_2:_The_Edge_of_Human
+
+[CORREÇÃO] Pergunta ID: 129 | Entidade-Foco: dbr:Limerick
+  ❌ Alucinado: dbo:mouthMouth
+  ✅ Trocado p/: dbo:mouthPlace (Score: 0.77)
+  🔍 Top 3 opções avaliadas: [dbo:mouthPlace (0.77), dbp:mouthLocation (0.75), dbo:mouthMountain (0.63)]
+
+[CORREÇÃO] Pergunta ID: 129 | Entidade-Foco: dbr:Shannon_Pot
+  ❌ Alucinado: dbo:source
+  ✅ Trocado p/: dbp:source (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:source (1.00), dbp:reason (0.45), dbp:source1Location (0.34)]
+
+[CORREÇÃO] Pergunta ID: 130 | Entidade-Foco: dbr:Environmentalism
+  ❌ Alucinado: dbo:purpose
+  ✅ Trocado p/: dbp:purpose (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:purpose (1.00), dbp:context (0.52), dbp:subject (0.43)]
+
+[REJEITADO] Pergunta ID: 131 | Entidade-Foco: dbr:Matt_Williams_(New_Zealand_footballer)
+  ❌ Alucinado: dbo:player
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 134 | Entidade-Foco: dbr:Guggenheim_family
+  ❌ Alucinado: dbp:owner
+  ✅ Trocado p/: dbp:founder (Score: 0.61)
+  🔍 Top 3 opções avaliadas: [dbp:founder (0.61), dbp:relatives (0.44), dbp:founded (0.44)]
+
+[CORREÇÃO] Pergunta ID: 136 | Entidade-Foco: dbr:Western_Pennsylvania_Hospital
+  ❌ Alucinado: dbp:locationCity
+  ✅ Trocado p/: dbp:location (Score: 0.77)
+  🔍 Top 3 opções avaliadas: [dbp:location (0.77), dbp:country (0.51), dbo:deathPlace (0.47)]
+
+[REJEITADO] Pergunta ID: 137 | Entidade-Foco: dbr:Panos_Ioannides
+  ❌ Alucinado: dbo:foundedBy
+  ⚠️ Melhor opção encontrada: dbp:notableworks (Score: 0.32 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 138 | Entidade-Foco: dbr:1967_Mexican_Grand_Prix
+  ❌ Alucinado: dbp:owner
+  ⚠️ Melhor opção encontrada: dbp:officialName (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 138 | Entidade-Foco: dbr:Dagenham_wind_turbines
+  ❌ Alucinado: dbp:firstTeam
+  ⚠️ Melhor opção encontrada: dbo:openingYear (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 139 | Entidade-Foco: dbr:Lisa_Brummel
+  ❌ Alucinado: dbp:education
+  ⚠️ Melhor opção encontrada: dbp:almaMater (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Sidney_Catlin_Partridge
+
+[REJEITADO] Pergunta ID: 140 | Entidade-Foco: dbr:Kharghar
+  ❌ Alucinado: dbp:school
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.48 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 141 | Entidade-Foco: dbr:Holmes_Colbert
+  ❌ Alucinado: dbp:ethinicity
+  ⚠️ Melhor opção encontrada: dbp:occupation (Score: 0.29 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 141 | Entidade-Foco: dbr:Riley_Reid
+  ❌ Alucinado: dbp:stateOfOrigin
+  ⚠️ Melhor opção encontrada: dbp:birthDate (Score: 0.25 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 143 | Entidade-Foco: dbr:O.co_Coliseum
+  ❌ Alucinado: dbo:stadium
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.10 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 145 | Entidade-Foco: dbr:Congress_of_Industrial_Organizations
+  ❌ Alucinado: dbp:foundation
+  ⚠️ Melhor opção encontrada: dbp:founded (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 145 | Entidade-Foco: dbr:Pittsburgh_Steelers
+  ❌ Alucinado: dbp:city
+  ⚠️ Melhor opção encontrada: dbp:stadium (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 147 | Entidade-Foco: dbr:Kaliningrad
+  ❌ Alucinado: dbo:cities
+  ✅ Trocado p/: dbp:cities (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:cities (1.00), dbp:city (0.87), dbo:city (0.87)]
+
+[CORREÇÃO] Pergunta ID: 147 | Entidade-Foco: dbr:Danish_straits
+  ❌ Alucinado: dbp:cities
+  ✅ Trocado p/: dbp:location (Score: 0.63)
+  🔍 Top 3 opções avaliadas: [dbp:location (0.63), dbo:location (0.63), dbo:place (0.52)]
+
+[CORREÇÃO] Pergunta ID: 148 | Entidade-Foco: dbr:2006–07_Middlesbrough_F.C._season
+  ❌ Alucinado: dbo:teamManager
+  ✅ Trocado p/: dbp:manager (Score: 0.84)
+  🔍 Top 3 opções avaliadas: [dbp:manager (0.84), dbo:manager (0.84), dbo:team (0.63)]
+
+[REJEITADO] Pergunta ID: 149 | Entidade-Foco: dbr:Lee_Robinson_(American_football)
+  ❌ Alucinado: dbo:debutTeam
+  ⚠️ Melhor opção encontrada: dbo:formerTeam (Score: 0.59 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 151 | Entidade-Foco: dbr:McKechnie_Field
+  ❌ Alucinado: dbo:renovation
+  ⚠️ Melhor opção encontrada: dbo:wikiPageRedirects (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 152 | Entidade-Foco: dbr:2012–13_Marquette_Golden_Eagles_men's_basketball_team
+  ❌ Alucinado: dbp:coach
+  ✅ Trocado p/: dbp:headCoach (Score: 0.88)
+  🔍 Top 3 opções avaliadas: [dbp:headCoach (0.88), dbp:coachrank (0.72), dbp:asstCoach (0.67)]
+
+[CORREÇÃO] Pergunta ID: 153 | Entidade-Foco: dbr:Miluk_language
+  ❌ Alucinado: dbp:language
+  ✅ Trocado p/: dbo:language (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:language (1.00), dbo:languageFamily (0.71), dbp:ethnicity (0.44)]
+
+[CORREÇÃO] Pergunta ID: 154 | Entidade-Foco: dbr:Carl_Stokes
+  ❌ Alucinado: dbp:governor
+  ✅ Trocado p/: dbp:president (Score: 0.62)
+  🔍 Top 3 opções avaliadas: [dbp:president (0.62), dbp:candidate (0.58), dbp:nominee (0.51)]
+
+[CORREÇÃO] Pergunta ID: 154 | Entidade-Foco: dbr:Winston_Bryant
+  ❌ Alucinado: dbp:president
+  ✅ Trocado p/: dbp:governor (Score: 0.62)
+  🔍 Top 3 opções avaliadas: [dbp:governor (0.62), dbp:nominee (0.57), dbp:candidate (0.57)]
+
+[REJEITADO] Pergunta ID: 155 | Entidade-Foco: dbr:PATTS_College_of_Aeronautics
+  ❌ Alucinado: dbo:sport
+  ⚠️ Melhor opção encontrada: dbp:sportingAffiliations (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 155 | Entidade-Foco: dbr:Jon_Speelman
+  ❌ Alucinado: dbo:sport
+  ⚠️ Melhor opção encontrada: dbp:country (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 157 | Entidade-Foco: dbr:Oldsmobile_88
+  ❌ Alucinado: dbp:likes
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 158 | Entidade-Foco: dbr:Ptolemy_XII_Auletes
+  ❌ Alucinado: dbo:parent
+  ✅ Trocado p/: dbp:father (Score: 0.75)
+  🔍 Top 3 opções avaliadas: [dbp:father (0.75), dbp:mother (0.72), dbo:child (0.70)]
+
+[REJEITADO] Pergunta ID: 158 | Entidade-Foco: dbr:Ptolemy_XIII_Theos_Philopator
+  ❌ Alucinado: dbp:consort
+  ⚠️ Melhor opção encontrada: dbp:spouse (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 159 | Entidade-Foco: dbr:Primus_(band)
+  ❌ Alucinado: dbo:voice
+  ⚠️ Melhor opção encontrada: dbo:soundRecording (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 160 | Entidade-Foco: dbr:Woodlane,_New_Jersey
+  ❌ Alucinado: dbo:campus
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.22 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 161 | Entidade-Foco: dbr:State_of_Mexico
+  ❌ Alucinado: dbo:parentPlace
+  ✅ Trocado p/: dbp:place (Score: 0.75)
+  🔍 Top 3 opções avaliadas: [dbp:place (0.75), dbo:place (0.75), dbp:birthPlace (0.67)]
+
+[CORREÇÃO] Pergunta ID: 162 | Entidade-Foco: dbr:Blodpalt
+  ❌ Alucinado: dbp:ingredient
+  ✅ Trocado p/: dbo:ingredient (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:ingredient (1.00), dbo:ingredientName (0.84), dbp:mainIngredient (0.84)]
+
+[REJEITADO] Pergunta ID: 163 | Entidade-Foco: dbr:GNOWSYS
+  ❌ Alucinado: dbp:author
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 164 | Entidade-Foco: dbr:Trade_association
+  ❌ Alucinado: dbo:servingRegion
+  ⚠️ Melhor opção encontrada: dbp:services (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 166 | Entidade-Foco: dbr:Tonight's_the_Night_(2003_musical)
+  ❌ Alucinado: dbp:composer
+  ⚠️ Melhor opção encontrada: dbp:music (Score: 0.55 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 167 | Entidade-Foco: dbr:Mass_media
+  ❌ Alucinado: dbo:producer
+  ⚠️ Melhor opção encontrada: dbp:industry (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 168 | Entidade-Foco: dbr:Bert_S._Michell
+  ❌ Alucinado: dbo:breeder
+  ⚠️ Melhor opção encontrada: dbp:trainer (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 169 | Entidade-Foco: dbr:Christen-Democratisch_en_Vlaams
+  ❌ Alucinado: dbo:affiliation
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.24 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 170 | Entidade-Foco: dbr:Viveka_Babajee
+  ❌ Alucinado: dbp:nationality
+  ⚠️ Melhor opção encontrada: dbp:birthName (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 172 | Entidade-Foco: dbr:Y._S._Rajasekhara_Reddy
+  ❌ Alucinado: dbp:leaderName
+  ✅ Trocado p/: dbp:leader (Score: 0.84)
+  🔍 Top 3 opções avaliadas: [dbp:leader (0.84), dbo:firstLeader (0.81), dbo:secondLeader (0.74)]
+
+[CORREÇÃO] Pergunta ID: 173 | Entidade-Foco: dbr:Krapanski_Potok
+  ❌ Alucinado: dbp:tributary
+  ✅ Trocado p/: dbp:tributariesLeft (Score: 0.81)
+  🔍 Top 3 opções avaliadas: [dbp:tributariesLeft (0.81), dbp:subdivisionName (0.34), dbp:mouthLocation (0.33)]
+
+[REJEITADO] Pergunta ID: 178 | Entidade-Foco: dbr:Lennon_Legend:_The_Very_Best_of_John_Lennon_(DVD)
+  ❌ Alucinado: dbp:director
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 180 | Entidade-Foco: dbr:Svetlana_Navasardyan
+  ❌ Alucinado: dbp:country
+  ⚠️ Melhor opção encontrada: dbo:hometown (Score: 0.54 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 186 | Entidade-Foco: dbr:American_Pekin_duck
+  ❌ Alucinado: dbo:relative
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.17 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 187 | Entidade-Foco: dbr:Seed_Eight
+  ❌ Alucinado: dbp:label
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.11 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 188 | Entidade-Foco: dbr:Sierra_del_Merendón
+  ❌ Alucinado: dbp:country
+  ⚠️ Melhor opção encontrada: dbp:highestLocation (Score: 0.37 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 189 | Entidade-Foco: dbr:Crook_County,_Oregon
+  ❌ Alucinado: dbp:countyCommunity
+  ✅ Trocado p/: dbo:county (Score: 0.78)
+  🔍 Top 3 opções avaliadas: [dbo:county (0.78), dbp:county (0.78), dbp:counties (0.71)]
+
+[REJEITADO] Pergunta ID: 192 | Entidade-Foco: dbr:Colpix_Records
+  ❌ Alucinado: dbp:musicalArtist
+  ⚠️ Melhor opção encontrada: dbp:genre (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 193 | Entidade-Foco: dbr:Cathedral_Peak_(California)
+  ❌ Alucinado: dbp:firstAscentPerson
+  ✅ Trocado p/: dbo:firstAscentPerson (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:firstAscentPerson (1.00), dbp:firstAscent (0.85), dbo:firstAscentYear (0.76)]
+
+[CORREÇÃO] Pergunta ID: 193 | Entidade-Foco: dbr:Mount_Hoffmann
+  ❌ Alucinado: dbp:firstAscentPerson
+  ✅ Trocado p/: dbp:firstAscent (Score: 0.85)
+  🔍 Top 3 opções avaliadas: [dbp:firstAscent (0.85), dbp:parentPeak (0.35), dbp:elevationFt (0.33)]
+
+[REJEITADO] Pergunta ID: 197 | Entidade-Foco: dbr:The_Times_They_Are_a-Changin'_(musical)
+  ❌ Alucinado: dbp:composer
+  ⚠️ Melhor opção encontrada: dbp:music (Score: 0.55 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 197 | Entidade-Foco: dbr:Motorpsycho_Nitemare
+  ❌ Alucinado: dbp:composer
+  ⚠️ Melhor opção encontrada: dbp:artist (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 198 | Entidade-Foco: dbr:Dowra
+  ❌ Alucinado: dbo:source
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 199 | Entidade-Foco: dbr:Mongolian_legislative_election,_2004
+  ❌ Alucinado: dbp:leader
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.11 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 200 | Entidade-Foco: dbr:Steve_Burke_(businessman)
+  ❌ Alucinado: dbp:leader
+  ⚠️ Melhor opção encontrada: dbp:title (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 201 | Entidade-Foco: dbr:Homestead_Grays_Bridge
+  ❌ Alucinado: dbp:municipality
+  ⚠️ Melhor opção encontrada: dbo:locatedInArea (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 202 | Entidade-Foco: dbr:Yokohama_National_University
+  ❌ Alucinado: dbp:graduation
+  ✅ Trocado p/: dbp:college (Score: 0.64)
+  🔍 Top 3 opções avaliadas: [dbp:college (0.64), dbo:college (0.64), dbp:postgrad (0.61)]
+
+[CORREÇÃO] Pergunta ID: 203 | Entidade-Foco: dbr:The_Incredible_Hulk_(1982_TV_series)
+  ❌ Alucinado: dbp:narrator
+  ✅ Trocado p/: dbo:narrator (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:narrator (1.00), dbp:narrated (0.74), dbo:voice (0.62)]
+
+[REJEITADO] Pergunta ID: 205 | Entidade-Foco: dbr:Philip_Novak
+  ❌ Alucinado: dbo:religion
+  ⚠️ Melhor opção encontrada: dbp:influences (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 205 | Entidade-Foco: dbr:Vesak
+  ❌ Alucinado: dbo:religion
+  ⚠️ Melhor opção encontrada: dbp:festivals (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 206 | Entidade-Foco: dbr:Anglo-Frisian_languages
+  ❌ Alucinado: dbo:family
+  ✅ Trocado p/: dbo:languageFamily (Score: 0.61)
+  🔍 Top 3 opções avaliadas: [dbo:languageFamily (0.61), dbp:familycolor (0.61), dbp:relatedGroups (0.52)]
+
+[REJEITADO] Pergunta ID: 207 | Entidade-Foco: dbr:Michael_Nichols_(photographer)
+  ❌ Alucinado: dbo:area
+  ⚠️ Melhor opção encontrada: dbo:birthPlace (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 207 | Entidade-Foco: dbr:Tar_Heel_Sports_Network
+  ❌ Alucinado: dbo:residence
+  ⚠️ Melhor opção encontrada: dbo:locationCountry (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 208 | Entidade-Foco: dbr:Cologny
+  ❌ Alucinado: dbo:neighboringMunicipalities
+  ✅ Trocado p/: dbp:neighboringMunicipalities (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:neighboringMunicipalities (1.00), dbo:neighboringMunicipality (0.89), dbp:municipalityType (0.63)]
+
+[CORREÇÃO] Pergunta ID: 208 | Entidade-Foco: dbr:Lancy
+  ❌ Alucinado: dbo:neighboringMunicipalities
+  ✅ Trocado p/: dbp:neighboringMunicipalities (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:neighboringMunicipalities (1.00), dbo:neighboringMunicipality (0.89), dbp:municipalityType (0.63)]
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:So_Paulo_Museum_of_Art
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:VP-8
+
+[REJEITADO] Pergunta ID: 210 | Entidade-Foco: dbr:VP-10
+  ❌ Alucinado: dbo:commandStrike
+  ⚠️ Melhor opção encontrada: dbp:commandStructure (Score: 0.51 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 211 | Entidade-Foco: dbr:French_Southern_and_Antarctic_Lands
+  ❌ Alucinado: dbp:money
+  ⚠️ Melhor opção encontrada: dbp:currency (Score: 0.59 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 212 | Entidade-Foco: dbr:Azerbaijan
+  ❌ Alucinado: dbo:memeber
+  ⚠️ Melhor opção encontrada: dbp:image (Score: 0.31 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 213 | Entidade-Foco: dbr:MSX_BASIC
+  ❌ Alucinado: dbo:contentLizenz
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.30 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 214 | Entidade-Foco: dbr:Spy_Kids_(franchise)
+  ❌ Alucinado: dbp:series
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 216 | Entidade-Foco: dbr:Victoria_(ship)
+  ❌ Alucinado: dbo:ship
+  ✅ Trocado p/: dbp:shipName (Score: 0.73)
+  🔍 Top 3 opções avaliadas: [dbp:shipName (0.73), dbp:shipOwner (0.70), dbp:shipAcquired (0.69)]
+
+[CORREÇÃO] Pergunta ID: 217 | Entidade-Foco: dbr:Sevan_Ross
+  ❌ Alucinado: dbp:predecessor
+  ✅ Trocado p/: dbp:successor (Score: 0.74)
+  🔍 Top 3 opções avaliadas: [dbp:successor (0.74), dbo:successor (0.74), dbp:lineage (0.47)]
+
+[CORREÇÃO] Pergunta ID: 219 | Entidade-Foco: dbr:Somerset_Berkley_Regional_High_School
+  ❌ Alucinado: dbo:rival
+  ✅ Trocado p/: dbp:rival (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:rival (1.00), dbo:rivalSchool (0.79), dbp:conference (0.41)]
+
+[REJEITADO] Pergunta ID: 221 | Entidade-Foco: dbr:Jack_McGregor
+  ❌ Alucinado: dbo:almaMater
+  ⚠️ Melhor opção encontrada: dbo:education (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 222 | Entidade-Foco: dbr:Dallas
+  ❌ Alucinado: dbo:foundationPlace
+  ✅ Trocado p/: dbp:foundation (Score: 0.84)
+  🔍 Top 3 opções avaliadas: [dbp:foundation (0.84), dbp:foundedPlace (0.60), dbp:place (0.59)]
+
+[REJEITADO] Pergunta ID: 223 | Entidade-Foco: dbr:EMI
+  ❌ Alucinado: dbo:artist
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 225 | Entidade-Foco: dbr:Big_Ticket_Entertainment
+  ❌ Alucinado: dbp:subsidiary
+  ✅ Trocado p/: dbo:subsidiary (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:subsidiary (1.00), dbp:company (0.66), dbo:company (0.66)]
+
+[REJEITADO] Pergunta ID: 226 | Entidade-Foco: dbr:Twin_Cities_400
+  ❌ Alucinado: dbp:operatedBy
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.28 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 227 | Entidade-Foco: dbr:Charles_A._Boutelle
+  ❌ Alucinado: dbp:restingPlace
+  ✅ Trocado p/: dbo:restingPlace (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:restingPlace (1.00), dbp:restingplace (0.89), dbp:deathPlace (0.42)]
+
+[REJEITADO] Pergunta ID: 229 | Entidade-Foco: dbr:Marja'
+  ❌ Alucinado: dbo:location
+  ⚠️ Melhor opção encontrada: dbp:post (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 230 | Entidade-Foco: dbr:Stoke-on-Trent
+  ❌ Alucinado: dbo:currentTeam
+  ✅ Trocado p/: dbo:team (Score: 0.71)
+  🔍 Top 3 opções avaliadas: [dbo:team (0.71), dbp:stadium (0.42), dbp:based (0.41)]
+
+[REJEITADO] Pergunta ID: 237 | Entidade-Foco: dbr:Sony_Music_Entertainment
+  ❌ Alucinado: dbo:musicalArtist
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.02 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 238 | Entidade-Foco: dbr:Justin_Trudeau
+  ❌ Alucinado: dbo:restingPlace
+  ⚠️ Melhor opção encontrada: dbo:birthPlace (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 239 | Entidade-Foco: dbr:Senser
+  ❌ Alucinado: dbo:currentMember
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.17 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 240 | Entidade-Foco: dbr:Hackweiser
+  ❌ Alucinado: dbp:leader
+  ✅ Trocado p/: dbp:leaderTitle (Score: 0.85)
+  🔍 Top 3 opções avaliadas: [dbp:leaderTitle (0.85), dbp:leaderName (0.84), dbo:leaderFunction (0.69)]
+
+[REJEITADO] Pergunta ID: 244 | Entidade-Foco: dbr:Stephen_Urban
+  ❌ Alucinado: dbp:battles
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 245 | Entidade-Foco: dbr:Katyayana_(Buddhist)
+  ❌ Alucinado: dbo:religiousAffiliation
+  ✅ Trocado p/: dbo:religion (Score: 0.67)
+  🔍 Top 3 opções avaliadas: [dbo:religion (0.67), dbp:religion (0.67), dbp:parents (0.29)]
+
+[REJEITADO] Pergunta ID: 246 | Entidade-Foco: dbr:Esnault-Pelterie_R.E.P._1
+  ❌ Alucinado: dbo:manufacturer
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.16 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 247 | Entidade-Foco: dbr:England_national_under-21_football_team
+  ❌ Alucinado: dbo:managerTeam
+  ✅ Trocado p/: dbo:managerClub (Score: 0.82)
+  🔍 Top 3 opções avaliadas: [dbo:managerClub (0.82), dbp:team (0.70), dbo:team (0.70)]
+
+[REJEITADO] Pergunta ID: 248 | Entidade-Foco: dbr:John_McEwen
+  ❌ Alucinado: dbo:commander
+  ⚠️ Melhor opção encontrada: dbo:leader (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 249 | Entidade-Foco: dbr:Mumbai_North_(Lok_Sabha_constituency)
+  ❌ Alucinado: dbo:leaderName
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.12 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 250 | Entidade-Foco: dbr:Jennifer_Lopez
+  ❌ Alucinado: dbo:judges
+  ✅ Trocado p/: dbp:judges (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:judges (1.00), dbo:showJudge (0.69), dbp:awards (0.43)]
+
+[CORREÇÃO] Pergunta ID: 250 | Entidade-Foco: dbr:Randy_Jackson
+  ❌ Alucinado: dbp:judges
+  ✅ Trocado p/: dbo:showJudge (Score: 0.69)
+  🔍 Top 3 opções avaliadas: [dbo:showJudge (0.69), dbo:producer (0.39), dbp:producer (0.39)]
+
+[CORREÇÃO] Pergunta ID: 251 | Entidade-Foco: dbr:1951_Asian_Games
+  ❌ Alucinado: dbo:host
+  ✅ Trocado p/: dbp:host (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:host (1.00), dbp:hostCity (0.69), dbp:hostInd (0.68)]
+
+[REJEITADO] Pergunta ID: 252 | Entidade-Foco: dbr:Cleopatra_V_of_Egypt
+  ❌ Alucinado: dbo:mother
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: -0.04 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 252 | Entidade-Foco: dbr:Ptolemy_XIII_Theos_Philopator
+  ❌ Alucinado: dbo:heir
+  ✅ Trocado p/: dbp:successor (Score: 0.67)
+  🔍 Top 3 opções avaliadas: [dbp:successor (0.67), dbo:successor (0.67), dbp:predecessor (0.57)]
+
+[REJEITADO] Pergunta ID: 253 | Entidade-Foco: dbr:Phish
+  ❌ Alucinado: dbo:collaborating
+  ⚠️ Melhor opção encontrada: dbp:producer (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 255 | Entidade-Foco: dbr:Nicole_Lai
+  ❌ Alucinado: dbo:restingPlace
+  ⚠️ Melhor opção encontrada: dbp:burialPlace (Score: 0.48 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 255 | Entidade-Foco: dbr:Pulau_Ubin
+  ❌ Alucinado: dbo:administration
+  ⚠️ Melhor opção encontrada: dbp:countryAdminDivisions (Score: 0.54 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 256 | Entidade-Foco: dbr:Refriango
+  ❌ Alucinado: dbo:distributor
+  ✅ Trocado p/: dbo:manufacturer (Score: 0.61)
+  🔍 Top 3 opções avaliadas: [dbo:manufacturer (0.61), dbp:manufacturer (0.61), dbo:wikiPageWikiLink (0.14)]
+
+[REJEITADO] Pergunta ID: 258 | Entidade-Foco: dbr:Auckland_rugby_union_team
+  ❌ Alucinado: dbp:country
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 259 | Entidade-Foco: dbr:Warwick_railway_station,_Perth
+  ❌ Alucinado: dbp:servingLine
+  ⚠️ Melhor opção encontrada: dbp:line (Score: 0.59 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 263 | Entidade-Foco: dbr:Russell_T_Davies
+  ❌ Alucinado: dbp:notableseries
+  ⚠️ Melhor opção encontrada: dbo:knownFor (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 263 | Entidade-Foco: dbr:Short_Trips:_A_Day_in_the_Life
+  ❌ Alucinado: dbp:notableseries
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.30 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 264 | Entidade-Foco: dbr:Chung_Won-shik
+  ❌ Alucinado: dbo:primeminister
+  ✅ Trocado p/: dbo:primeMinister (Score: 0.71)
+  🔍 Top 3 opções avaliadas: [dbo:primeMinister (0.71), dbp:president (0.43), dbp:premier (0.41)]
+
+[REJEITADO] Pergunta ID: 265 | Entidade-Foco: dbr:Adrian_A._Basora
+  ❌ Alucinado: dbo:restingPlace
+  ⚠️ Melhor opção encontrada: dbp:birthPlace (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 265 | Entidade-Foco: dbr:Palo_Alto,_California
+  ❌ Alucinado: dbp:supply
+  ⚠️ Melhor opção encontrada: dbo:location (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 266 | Entidade-Foco: dbr:Cinema_International_Corporation
+  ❌ Alucinado: dbo:publisher
+  ⚠️ Melhor opção encontrada: dbp:distributor (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 268 | Entidade-Foco: dbr:Neuroimaging
+  ❌ Alucinado: dbp:academicDiscipline
+  ✅ Trocado p/: dbo:academicDiscipline (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:academicDiscipline (1.00), dbp:discipline (0.77), dbp:subDiscipline (0.66)]
+
+[REJEITADO] Pergunta ID: 270 | Entidade-Foco: dbr:Ferris_wheel
+  ❌ Alucinado: dbo:wheel
+  ⚠️ Melhor opção encontrada: dbo:product (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 271 | Entidade-Foco: dbr:Akiva_Goldsman
+  ❌ Alucinado: dbo:editing
+  ⚠️ Melhor opção encontrada: dbp:studio (Score: 0.52 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 271 | Entidade-Foco: dbr:Mark_Stevens_(film_editor)
+  ❌ Alucinado: dbp:screenplay
+  ⚠️ Melhor opção encontrada: dbp:editor (Score: 0.54 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 274 | Entidade-Foco: dbr:21Vianet
+  ❌ Alucinado: dbo:cloudPlatform
+  ⚠️ Melhor opção encontrada: dbo:service (Score: 0.36 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 274 | Entidade-Foco: dbr:Google_Cloud_Connect
+  ❌ Alucinado: dbp:services
+  ⚠️ Melhor opção encontrada: dbp:platform (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 275 | Entidade-Foco: dbr:Haight-Ashbury
+  ❌ Alucinado: dbo:constituency
+  ⚠️ Melhor opção encontrada: dbo:politicalLeader (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 276 | Entidade-Foco: dbr:Lekh_Castle
+  ❌ Alucinado: dbo:location
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 276 | Entidade-Foco: dbr:Samur–Absheron_channel
+  ❌ Alucinado: dbp:loocation
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.30 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 277 | Entidade-Foco: dbr:Animal
+  ❌ Alucinado: dbp:kingdom
+  ✅ Trocado p/: dbo:kingdom (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:kingdom (1.00), dbp:authority (0.46), dbp:genre (0.43)]
+
+[REJEITADO] Pergunta ID: 281 | Entidade-Foco: dbr:Royal_Thai_Army
+  ❌ Alucinado: dbo:religion
+  ⚠️ Melhor opção encontrada: dbo:profession (Score: 0.37 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 287 | Entidade-Foco: dbr:The_God_Who_Wasn't_There
+  ❌ Alucinado: dbp:almaMater
+  ⚠️ Melhor opção encontrada: dbp:chapter (Score: 0.19 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 288 | Entidade-Foco: dbr:Guitar
+  ❌ Alucinado: dbo:associatedMusicalArtist
+  ⚠️ Melhor opção encontrada: dbo:formerBandMember (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 289 | Entidade-Foco: dbr:Los_Angeles_World_Airports
+  ❌ Alucinado: dbp:locationCity
+  ✅ Trocado p/: dbo:location (Score: 0.77)
+  🔍 Top 3 opções avaliadas: [dbo:location (0.77), dbp:headquarters (0.54), dbp:coordinates (0.38)]
+
+[REJEITADO] Pergunta ID: 294 | Entidade-Foco: dbr:Katyayana_(Buddhist)
+  ❌ Alucinado: dbo:ideology
+  ⚠️ Melhor opção encontrada: dbo:religion (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Mark_Sandrich
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Bharatiya_Janata_Party
+
+[REJEITADO] Pergunta ID: 298 | Entidade-Foco: dbr:Sullivan_Central_High_School
+  ❌ Alucinado: dbo:rival
+  ⚠️ Melhor opção encontrada: dbo:mascot (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 299 | Entidade-Foco: dbr:Dion_Beebe
+  ❌ Alucinado: dbo:award
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 302 | Entidade-Foco: dbr:Antoine_Bibeau
+  ❌ Alucinado: dbp:tenants
+  ⚠️ Melhor opção encontrada: dbp:position (Score: 0.28 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 302 | Entidade-Foco: dbr:MasterCard_Centre
+  ❌ Alucinado: dbp:draftTeam
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.03 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 304 | Entidade-Foco: dbr:Indiana_Territory
+  ❌ Alucinado: dbo:governor
+  ⚠️ Melhor opção encontrada: dbp:leader (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 305 | Entidade-Foco: dbr:Pepperdine_University
+  ❌ Alucinado: dbp:awards
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 307 | Entidade-Foco: dbr:Wickramabahu_Central_College_(National_School)
+  ❌ Alucinado: dbo:religion
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 309 | Entidade-Foco: dbr:Dan_Otero
+  ❌ Alucinado: dbp:debutTeam
+  ✅ Trocado p/: dbo:debutTeam (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:debutTeam (1.00), dbp:debutteam (0.76), dbp:debutleague (0.70)]
+
+[CORREÇÃO] Pergunta ID: 310 | Entidade-Foco: dbr:1997_Canadian_Grand_Prix
+  ❌ Alucinado: dbo:polePlace
+  ✅ Trocado p/: dbp:poleCountry (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbp:poleCountry (0.70), dbp:poleTeam (0.67), dbp:poleTime (0.66)]
+
+[CORREÇÃO] Pergunta ID: 310 | Entidade-Foco: dbr:1994_Spanish_Grand_Prix
+  ❌ Alucinado: dbo:polePlace
+  ✅ Trocado p/: dbp:poleCountry (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbp:poleCountry (0.70), dbp:poleTeam (0.67), dbp:poleTime (0.66)]
+
+[REJEITADO] Pergunta ID: 311 | Entidade-Foco: dbr:Not_on_Our_Watch_(organization)
+  ❌ Alucinado: dbo:foundedBy
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.13 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 312 | Entidade-Foco: dbr:Ella_Loves_Cole
+  ❌ Alucinado: dbo:subsequentWork
+  ⚠️ Melhor opção encontrada: dbp:nextTitle (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 314 | Entidade-Foco: dbr:Downriver
+  ❌ Alucinado: dbo:knownFor
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 315 | Entidade-Foco: dbr:Superior_general
+  ❌ Alucinado: dbo:religion
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 316 | Entidade-Foco: dbr:Tampa,_Florida
+  ❌ Alucinado: dbp:employer
+  ⚠️ Melhor opção encontrada: dbp:offices (Score: 0.52 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 317 | Entidade-Foco: dbr:Veterinary_physician
+  ❌ Alucinado: dbo:knownFor
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 318 | Entidade-Foco: dbr:Julian_Doyle_(filmmaker)
+  ❌ Alucinado: dbp:editor
+  ✅ Trocado p/: dbp:editing (Score: 0.77)
+  🔍 Top 3 opções avaliadas: [dbp:editing (0.77), dbo:editing (0.77), dbo:writer (0.55)]
+
+[REJEITADO] Pergunta ID: 319 | Entidade-Foco: dbr:The_Weathered_Underground
+  ❌ Alucinado: dbo:star
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.35 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 322 | Entidade-Foco: dbr:Marcus_Calpurnius_Bibulus
+  ❌ Alucinado: dbo:associate
+  ⚠️ Melhor opção encontrada: dbp:office (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 325 | Entidade-Foco: dbr:Sanggar_Agung
+  ❌ Alucinado: dbp:architecture
+  ✅ Trocado p/: dbo:architecturalStyle (Score: 0.83)
+  🔍 Top 3 opções avaliadas: [dbo:architecturalStyle (0.83), dbp:architecturalStyle (0.83), dbp:buildingName (0.45)]
+
+[CORREÇÃO] Pergunta ID: 326 | Entidade-Foco: dbr:Money_(Pink_Floyd_song)
+  ❌ Alucinado: dbo:song
+  ✅ Trocado p/: dbp:album (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbp:album (0.70), dbo:album (0.70), dbo:artist (0.52)]
+
+[CORREÇÃO] Pergunta ID: 327 | Entidade-Foco: dbr:Ron_Grainer
+  ❌ Alucinado: dbo:themeMusicComposer
+  ✅ Trocado p/: dbp:themeMusicComposer (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:themeMusicComposer (1.00), dbo:musicComposer (0.88), dbp:composer (0.82)]
+
+[CORREÇÃO] Pergunta ID: 327 | Entidade-Foco: dbr:Science_fiction
+  ❌ Alucinado: dbo:music
+  ✅ Trocado p/: dbp:genres (Score: 0.68)
+  🔍 Top 3 opções avaliadas: [dbp:genres (0.68), dbp:genre (0.60), dbo:genre (0.60)]
+
+[CORREÇÃO] Pergunta ID: 328 | Entidade-Foco: dbr:Fusajiro_Yamauchi
+  ❌ Alucinado: dbp:owner
+  ✅ Trocado p/: dbp:founder (Score: 0.61)
+  🔍 Top 3 opções avaliadas: [dbp:founder (0.61), dbp:occupation (0.49), dbp:title (0.48)]
+
+[REJEITADO] Pergunta ID: 329 | Entidade-Foco: dbr:Mark_Twain_Tonight
+  ❌ Alucinado: dbp:writer
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 332 | Entidade-Foco: dbr:Job_Durfee
+  ❌ Alucinado: dbo:nationality
+  ⚠️ Melhor opção encontrada: dbp:occupation (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 332 | Entidade-Foco: dbr:Daniel_L._D._Granger
+  ❌ Alucinado: dbo:nationality
+  ⚠️ Melhor opção encontrada: dbp:occupation (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 334 | Entidade-Foco: dbr:Live_in_Detroit,_MI
+  ❌ Alucinado: dbo:residence
+  ⚠️ Melhor opção encontrada: dbp:venue (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 334 | Entidade-Foco: dbr:Ken_Holland
+  ❌ Alucinado: dbo:residence
+  ⚠️ Melhor opção encontrada: dbp:citizenship (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 335 | Entidade-Foco: dbr:Marika_Gombitová
+  ❌ Alucinado: dbo:language
+  ⚠️ Melhor opção encontrada: dbp:writer (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 336 | Entidade-Foco: dbr:EMI
+  ❌ Alucinado: dbp:address
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 337 | Entidade-Foco: dbr:Mount_Raimer
+  ❌ Alucinado: dbo:nearestCity
+  ✅ Trocado p/: dbp:nearestCity (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:nearestCity (1.00), dbp:location (0.54), dbo:locatedInArea (0.46)]
+
+[REJEITADO] Pergunta ID: 338 | Entidade-Foco: dbr:Mary_Ainsworth
+  ❌ Alucinado: dbo:supervisor
+  ⚠️ Melhor opção encontrada: dbo:doctoralAdvisor (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 340 | Entidade-Foco: dbr:Hinkey_Haines
+  ❌ Alucinado: dbp:debutteam
+  ⚠️ Melhor opção encontrada: dbp:playingTeam (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 341 | Entidade-Foco: dbr:East_Indies_Station
+  ❌ Alucinado: dbp:garnisons
+  ⚠️ Melhor opção encontrada: dbo:country (Score: 0.31 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 341 | Entidade-Foco: dbr:Mumbai_Vadodara_Expressway
+  ❌ Alucinado: dbp:routeEnd
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 344 | Entidade-Foco: dbr:Beverly_Hills,_California
+  ❌ Alucinado: dbo:presenter
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 345 | Entidade-Foco: dbr:The_Price_of_Beauty
+  ❌ Alucinado: dbp:narrator
+  ✅ Trocado p/: dbo:narrator (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:narrator (1.00), dbp:narrated (0.74), dbp:director (0.46)]
+
+[REJEITADO] Pergunta ID: 347 | Entidade-Foco: dbr:Now_TV_(UK)
+  ❌ Alucinado: dbo:operatingSystem
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.15 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 348 | Entidade-Foco: dbr:Guitar
+  ❌ Alucinado: dbo:coach
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 350 | Entidade-Foco: dbr:Marion_Dufresne_(1995)
+  ❌ Alucinado: dbo:operatedBy
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 351 | Entidade-Foco: dbr:Stephen_L.R._McNichols
+  ❌ Alucinado: dbp:governor
+  ⚠️ Melhor opção encontrada: dbo:wikiPageDisambiguates (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 352 | Entidade-Foco: dbr:Liverpool_Playhouse
+  ❌ Alucinado: dbp:operatingBy
+  ⚠️ Melhor opção encontrada: dbp:owner (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 354 | Entidade-Foco: dbr:The_Lost_Special
+  ❌ Alucinado: dbp:series
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 356 | Entidade-Foco: dbr:Ludwig_Drums
+  ❌ Alucinado: dbo:notableMusicalArtist
+  ⚠️ Melhor opção encontrada: dbp:author (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 356 | Entidade-Foco: dbr:Remo
+  ❌ Alucinado: dbp:notableMusicalArtist
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.23 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 358 | Entidade-Foco: dbr:Jack_Ryan_(politician)
+  ❌ Alucinado: dbo:institution
+  ⚠️ Melhor opção encontrada: dbp:education (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Robert_Sarvis
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Where_Everybody_Knows_Your_Name
+
+[REJEITADO] Pergunta ID: 360 | Entidade-Foco: dbr:Shallot
+  ❌ Alucinado: dbp:food
+  ⚠️ Melhor opção encontrada: dbp:water (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 361 | Entidade-Foco: dbr:North-Western_Province,_Zambia
+  ❌ Alucinado: dbo:sourceOrigin
+  ⚠️ Melhor opção encontrada: dbp:source1Location (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:German_Wikipedia
+
+[CORREÇÃO] Pergunta ID: 363 | Entidade-Foco: dbr:Reading,_Berkshire
+  ❌ Alucinado: dbp:mouthPlace
+  ✅ Trocado p/: dbo:mouthPlace (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:mouthPlace (1.00), dbo:mouthMountain (0.67), dbo:place (0.63)]
+
+[CORREÇÃO] Pergunta ID: 363 | Entidade-Foco: dbr:Southend-on-Sea
+  ❌ Alucinado: dbp:mouthPlace
+  ✅ Trocado p/: dbo:mouthPlace (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:mouthPlace (1.00), dbo:mouthMountain (0.67), dbp:place (0.63)]
+
+[CORREÇÃO] Pergunta ID: 364 | Entidade-Foco: dbr:Alexander_Magleby
+  ❌ Alucinado: dbp:almaMater
+  ✅ Trocado p/: dbp:university (Score: 0.69)
+  🔍 Top 3 opções avaliadas: [dbp:university (0.69), dbo:university (0.69), dbp:school (0.45)]
+
+[REJEITADO] Pergunta ID: 366 | Entidade-Foco: dbr:Craig_Van_Tilbury
+  ❌ Alucinado: dbo:sport
+  ⚠️ Melhor opção encontrada: dbp:genre (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 366 | Entidade-Foco: dbr:Islamic_Azad_University_Central_Tehran_Branch
+  ❌ Alucinado: dbp:employer
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 367 | Entidade-Foco: dbr:Tweenies:_Game_Time
+  ❌ Alucinado: dbp:publisher
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.25 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 368 | Entidade-Foco: dbr:Alex_Chalk
+  ❌ Alucinado: dbp:leaderName
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 369 | Entidade-Foco: dbr:Absolutely_Fabulous
+  ❌ Alucinado: dbp:characters
+  ⚠️ Melhor opção encontrada: dbp:language (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 370 | Entidade-Foco: dbr:Hammond_organ
+  ❌ Alucinado: dbo:musicComposer
+  ⚠️ Melhor opção encontrada: dbp:instruments (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 372 | Entidade-Foco: dbr:Atia
+  ❌ Alucinado: dbp:religion
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.32 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 372 | Entidade-Foco: dbr:Janaka_Thissakuttiarachchi
+  ❌ Alucinado: dbp:residence
+  ⚠️ Melhor opção encontrada: dbp:nationality (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 373 | Entidade-Foco: dbr:Svetlana_Gounkina
+  ❌ Alucinado: dbo:largestCity
+  ⚠️ Melhor opção encontrada: dbp:birthPlace (Score: 0.30 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 374 | Entidade-Foco: dbr:Christopher_Franke
+  ❌ Alucinado: dbp:starring
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 374 | Entidade-Foco: dbr:Jason_Carter_(actor)
+  ❌ Alucinado: dbp:artist
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 377 | Entidade-Foco: dbr:General_Educational_Development
+  ❌ Alucinado: dbo:residence
+  ⚠️ Melhor opção encontrada: dbo:education (Score: 0.24 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 380 | Entidade-Foco: dbr:Chris_DuBois
+  ❌ Alucinado: dbp:founder
+  ⚠️ Melhor opção encontrada: dbp:birthName (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 381 | Entidade-Foco: dbr:Australia
+  ❌ Alucinado: dbo:operatingBy
+  ✅ Trocado p/: dbp:executedBy (Score: 0.62)
+  🔍 Top 3 opções avaliadas: [dbp:executedBy (0.62), dbp:usedBy (0.58), dbo:foundedBy (0.44)]
+
+[REJEITADO] Pergunta ID: 384 | Entidade-Foco: dbr:Amiga
+  ❌ Alucinado: dbo:sport
+  ⚠️ Melhor opção encontrada: dbp:genre (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 386 | Entidade-Foco: dbr:Battle_of_the_Bulge
+  ❌ Alucinado: dbo:battles
+  ✅ Trocado p/: dbp:battles (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:battles (1.00), dbo:battle (0.94), dbp:battleHonours (0.63)]
+
+[REJEITADO] Pergunta ID: 387 | Entidade-Foco: dbr:Commodore_CDTV
+  ❌ Alucinado: dbo:genre
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.04 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 389 | Entidade-Foco: dbr:Isaac_Hayes
+  ❌ Alucinado: dbp:voices
+  ✅ Trocado p/: dbo:voice (Score: 0.88)
+  🔍 Top 3 opções avaliadas: [dbo:voice (0.88), dbp:music (0.56), dbp:artist (0.40)]
+
+[REJEITADO] Pergunta ID: 394 | Entidade-Foco: dbr:Mrunalini_Kunte
+  ❌ Alucinado: dbp:relatives
+  ⚠️ Melhor opção encontrada: dbp:country (Score: 0.35 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 395 | Entidade-Foco: dbr:Divertis
+  ❌ Alucinado: dbo:worker
+  ⚠️ Melhor opção encontrada: dbo:associatedMusicalArtist (Score: 0.20 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 396 | Entidade-Foco: dbr:Russell_T_Davies
+  ❌ Alucinado: dbp:notableworks
+  ⚠️ Melhor opção encontrada: dbo:knownFor (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Unix-like
+
+[CORREÇÃO] Pergunta ID: 399 | Entidade-Foco: dbr:Berlin
+  ❌ Alucinado: dbo:party
+  ✅ Trocado p/: dbp:leaderParty (Score: 0.71)
+  🔍 Top 3 opções avaliadas: [dbp:leaderParty (0.71), dbp:team (0.49), dbo:team (0.49)]
+
+[REJEITADO] Pergunta ID: 402 | Entidade-Foco: dbr:Gary_Holder-Winfield
+  ❌ Alucinado: dbo:militaryBranch
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.17 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 403 | Entidade-Foco: dbr:The_Adventures_of_Mimi_(video)
+  ❌ Alucinado: dbp:director
+  ⚠️ Melhor opção encontrada: dbp:writer (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 404 | Entidade-Foco: dbr:England_national_under-21_football_team
+  ❌ Alucinado: dbo:managerTeam
+  ✅ Trocado p/: dbo:managerClub (Score: 0.82)
+  🔍 Top 3 opções avaliadas: [dbo:managerClub (0.82), dbp:team (0.70), dbo:team (0.70)]
+
+[CORREÇÃO] Pergunta ID: 404 | Entidade-Foco: dbr:Middlesbrough_F.C.
+  ❌ Alucinado: dbo:managerTeam
+  ✅ Trocado p/: dbp:manager (Score: 0.83)
+  🔍 Top 3 opções avaliadas: [dbp:manager (0.83), dbo:manager (0.83), dbo:managerClub (0.82)]
+
+[CORREÇÃO] Pergunta ID: 405 | Entidade-Foco: dbr:La_Liga
+  ❌ Alucinado: dbo:club
+  ✅ Trocado p/: dbo:managerClub (Score: 0.76)
+  🔍 Top 3 opções avaliadas: [dbo:managerClub (0.76), dbp:mostSuccessfulClub (0.66), dbo:league (0.56)]
+
+[CORREÇÃO] Pergunta ID: 406 | Entidade-Foco: dbr:The_Elders_(organization)
+  ❌ Alucinado: dbp:keyPerson
+  ✅ Trocado p/: dbo:keyPerson (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:keyPerson (1.00), dbp:keyPeople (0.86), dbp:name (0.38)]
+
+[REJEITADO] Pergunta ID: 408 | Entidade-Foco: dbr:Mangalore
+  ❌ Alucinado: dbo:membership
+  ⚠️ Melhor opção encontrada: dbp:founded (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 409 | Entidade-Foco: dbr:Delta_III
+  ❌ Alucinado: dbo:producer
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.32 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 414 | Entidade-Foco: dbr:Crusade_(TV_series)
+  ❌ Alucinado: dbo:subsequentWork
+  ⚠️ Melhor opção encontrada: dbo:Work/runtime (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 415 | Entidade-Foco: dbr:Chester_Bennington
+  ❌ Alucinado: dbo:currentMusicBand
+  ✅ Trocado p/: dbo:associatedBand (Score: 0.73)
+  🔍 Top 3 opções avaliadas: [dbo:associatedBand (0.73), dbo:formerBandMember (0.68), dbo:associatedMusicalArtist (0.53)]
+
+[REJEITADO] Pergunta ID: 418 | Entidade-Foco: dbr:Orthonychidae
+  ❌ Alucinado: dbo:bird
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 419 | Entidade-Foco: dbr:1994_Spanish_Grand_Prix
+  ❌ Alucinado: dbp:polePlace
+  ✅ Trocado p/: dbp:poleCountry (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbp:poleCountry (0.70), dbp:poleTeam (0.67), dbp:poleTime (0.66)]
+
+[CORREÇÃO] Pergunta ID: 421 | Entidade-Foco: dbr:Grameen_Bank
+  ❌ Alucinado: dbo:founder
+  ✅ Trocado p/: dbp:founder (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:founder (1.00), dbo:foundedBy (0.74), dbp:foundation (0.44)]
+
+[CORREÇÃO] Pergunta ID: 423 | Entidade-Foco: dbr:The_Second_Coming_(TV_serial)
+  ❌ Alucinado: dbo:writer
+  ✅ Trocado p/: dbp:writer (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:writer (1.00), dbo:author (0.70), dbp:editor (0.55)]
+
+[REJEITADO] Pergunta ID: 424 | Entidade-Foco: dbr:Gibson_Guitar_Corporation
+  ❌ Alucinado: dbo:knownFor
+  ⚠️ Melhor opção encontrada: dbp:wordnet_type (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 425 | Entidade-Foco: dbr:Jack_Ferguson
+  ❌ Alucinado: dbo:primeMinister
+  ⚠️ Melhor opção encontrada: dbp:candidate (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 428 | Entidade-Foco: dbr:Donald_Brooks
+  ❌ Alucinado: dbp:president
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 428 | Entidade-Foco: dbr:Michael_Springer
+  ❌ Alucinado: dbp:president
+  ⚠️ Melhor opção encontrada: dbp:position (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 430 | Entidade-Foco: dbr:Monty_Python
+  ❌ Alucinado: dbo:distributor
+  ✅ Trocado p/: dbo:productionCompany (Score: 0.60)
+  🔍 Top 3 opções avaliadas: [dbo:productionCompany (0.60), dbp:company (0.51), dbo:company (0.51)]
+
+[REJEITADO] Pergunta ID: 430 | Entidade-Foco: dbr:Cinema_International_Corporation
+  ❌ Alucinado: dbp:writer
+  ⚠️ Melhor opção encontrada: dbp:type (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 432 | Entidade-Foco: dbr:Erik_Jendresen
+  ❌ Alucinado: dbo:series
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 433 | Entidade-Foco: dbr:Elasticsearch
+  ❌ Alucinado: dbp:office
+  ⚠️ Melhor opção encontrada: dbp:developer (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 433 | Entidade-Foco: dbr:Yellow_Claw_(DJs)
+  ❌ Alucinado: dbp:office
+  ⚠️ Melhor opção encontrada: dbp:occupation (Score: 0.52 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 434 | Entidade-Foco: dbr:Kelly_Brook
+  ❌ Alucinado: dbp:partner
+  ✅ Trocado p/: dbp:spouse (Score: 0.64)
+  🔍 Top 3 opções avaliadas: [dbp:spouse (0.64), dbp:name (0.42), dbp:presenter (0.37)]
+
+[CORREÇÃO] Pergunta ID: 435 | Entidade-Foco: dbr:9TV
+  ❌ Alucinado: dbo:affiliation
+  ✅ Trocado p/: dbp:affiliation (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:affiliation (1.00), dbp:affiliations (0.96), dbp:founded (0.60)]
+
+[CORREÇÃO] Pergunta ID: 436 | Entidade-Foco: dbr:Gerard_Piqué
+  ❌ Alucinado: dbp:spouse
+  ✅ Trocado p/: dbp:partner (Score: 0.64)
+  🔍 Top 3 opções avaliadas: [dbp:partner (0.64), dbo:partner (0.64), dbo:owner (0.52)]
+
+[CORREÇÃO] Pergunta ID: 438 | Entidade-Foco: dbr:Chip_Kelly
+  ❌ Alucinado: dbo:coach
+  ✅ Trocado p/: dbp:coach (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:coach (1.00), dbp:headCoach (0.88), dbp:homeCoach (0.80)]
+
+[REJEITADO] Pergunta ID: 439 | Entidade-Foco: dbr:List_of_The_Wolves_of_Mercy_Falls_characters
+  ❌ Alucinado: dbp:characters
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 440 | Entidade-Foco: dbr:North-Western_Province,_Zambia
+  ❌ Alucinado: dbo:sourceCountry
+  ✅ Trocado p/: dbo:country (Score: 0.73)
+  🔍 Top 3 opções avaliadas: [dbo:country (0.73), dbp:source1Location (0.56), dbp:location (0.55)]
+
+[CORREÇÃO] Pergunta ID: 440 | Entidade-Foco: dbr:Zambia
+  ❌ Alucinado: dbo:sourceRegion
+  ✅ Trocado p/: dbp:region (Score: 0.76)
+  🔍 Top 3 opções avaliadas: [dbp:region (0.76), dbp:source1Location (0.63), dbp:cityOrRegion (0.61)]
+
+[REJEITADO] Pergunta ID: 442 | Entidade-Foco: dbr:Fiq,_Ethiopia
+  ❌ Alucinado: dbo:birthPlace
+  ⚠️ Melhor opção encontrada: dbo:country (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 442 | Entidade-Foco: dbr:Adugna_Deyas
+  ❌ Alucinado: dbo:location
+  ⚠️ Melhor opção encontrada: dbp:position (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Lee_Hyun-jae
+
+[REJEITADO] Pergunta ID: 445 | Entidade-Foco: dbr:Ford_F-Series_first_generation
+  ❌ Alucinado: dbp:motor
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.13 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 446 | Entidade-Foco: dbr:Neungin_High_School
+  ❌ Alucinado: dbo:religiousAffiliation
+  ✅ Trocado p/: dbp:religiousAffiliation (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:religiousAffiliation (1.00), dbo:religion (0.67), dbp:authority (0.35)]
+
+[CORREÇÃO] Pergunta ID: 448 | Entidade-Foco: dbr:Lori_Black
+  ❌ Alucinado: dbp:children
+  ✅ Trocado p/: dbo:child (Score: 0.71)
+  🔍 Top 3 opções avaliadas: [dbo:child (0.71), dbp:parents (0.62), dbo:parent (0.54)]
+
+[CORREÇÃO] Pergunta ID: 449 | Entidade-Foco: dbr:The_South_End
+  ❌ Alucinado: dbp:owner
+  ✅ Trocado p/: dbo:owner (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:owner (1.00), dbp:owners (0.91), dbp:name (0.40)]
+
+[CORREÇÃO] Pergunta ID: 450 | Entidade-Foco: dbr:Xocolatlite
+  ❌ Alucinado: dbp:colour
+  ✅ Trocado p/: dbo:colour (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:colour (1.00), dbp:color (0.97), dbo:description (0.44)]
+
+[REJEITADO] Pergunta ID: 453 | Entidade-Foco: dbr:Maike_Evers
+  ❌ Alucinado: dbo:ethnicity
+  ⚠️ Melhor opção encontrada: dbo:hairColor (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 453 | Entidade-Foco: dbr:Francisco_Lachowski
+  ❌ Alucinado: dbo:ethnicity
+  ⚠️ Melhor opção encontrada: dbp:occupation (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 454 | Entidade-Foco: dbr:City_of_Newcastle
+  ❌ Alucinado: dbp:foundedIn
+  ⚠️ Melhor opção encontrada: dbo:locatedInArea (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 455 | Entidade-Foco: dbr:VMF-155
+  ❌ Alucinado: dbo:militaryUnit
+  ✅ Trocado p/: dbo:militaryBranch (Score: 0.76)
+  🔍 Top 3 opções avaliadas: [dbo:militaryBranch (0.76), dbp:unitName (0.66), dbp:garrison (0.47)]
+
+[CORREÇÃO] Pergunta ID: 455 | Entidade-Foco: dbr:VMF-218
+  ❌ Alucinado: dbo:militaryUnit
+  ✅ Trocado p/: dbo:militaryBranch (Score: 0.76)
+  🔍 Top 3 opções avaliadas: [dbo:militaryBranch (0.76), dbp:unitName (0.66), dbo:aircraftFighter (0.41)]
+
+[CORREÇÃO] Pergunta ID: 456 | Entidade-Foco: dbr:Interplay_Entertainment
+  ❌ Alucinado: dbo:formerArtist
+  ✅ Trocado p/: dbp:formerName (Score: 0.64)
+  🔍 Top 3 opções avaliadas: [dbp:formerName (0.64), dbo:formerName (0.64), dbp:name (0.34)]
+
+[CORREÇÃO] Pergunta ID: 457 | Entidade-Foco: dbr:Purvis_Eureka
+  ❌ Alucinado: dbp:producer
+  ✅ Trocado p/: dbp:production (Score: 0.72)
+  🔍 Top 3 opções avaliadas: [dbp:production (0.72), dbo:productionEndYear (0.50), dbp:manufacturer (0.49)]
+
+[REJEITADO] Pergunta ID: 457 | Entidade-Foco: dbr:Ford_Theatre
+  ❌ Alucinado: dbp:owner
+  ⚠️ Melhor opção encontrada: dbp:company (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 458 | Entidade-Foco: dbr:EMMS
+  ❌ Alucinado: dbp:developer
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.27 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 459 | Entidade-Foco: dbr:Teddy_Riley
+  ❌ Alucinado: dbp:associatedMusicalBand
+  ✅ Trocado p/: dbo:associatedBand (Score: 0.88)
+  🔍 Top 3 opções avaliadas: [dbo:associatedBand (0.88), dbo:associatedMusicalArtist (0.78), dbo:bandMember (0.69)]
+
+[REJEITADO] Pergunta ID: 463 | Entidade-Foco: dbr:Paphos_District
+  ❌ Alucinado: dbp:airport
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 464 | Entidade-Foco: dbr:Chip_Hale
+  ❌ Alucinado: dbo:club
+  ⚠️ Melhor opção encontrada: dbp:championship (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 465 | Entidade-Foco: dbr:Bacilli
+  ❌ Alucinado: dbo:taxonomicKlasse
+  ⚠️ Melhor opção encontrada: dbp:taxon (Score: 0.51 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 466 | Entidade-Foco: dbr:Reigh_Count
+  ❌ Alucinado: dbp:employer
+  ⚠️ Melhor opção encontrada: dbo:owner (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 467 | Entidade-Foco: dbr:Sony_Corporation_shareholders_and_subsidiaries
+  ❌ Alucinado: dbo:subvention
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 468 | Entidade-Foco: dbr:2014_FIFA_U-17_Women's_World_Cup
+  ❌ Alucinado: dbo:birthPlace
+  ⚠️ Melhor opção encontrada: dbp:cities (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 469 | Entidade-Foco: dbr:South_Side_Elevated_Railroad
+  ❌ Alucinado: dbp:area
+  ✅ Trocado p/: dbo:location (Score: 0.63)
+  🔍 Top 3 opções avaliadas: [dbo:location (0.63), dbp:locale (0.34), dbp:close (0.33)]
+
+[REJEITADO] Pergunta ID: 469 | Entidade-Foco: dbr:Sakari_Suzuki
+  ❌ Alucinado: dbp:placeOfOperator
+  ⚠️ Melhor opção encontrada: dbo:birthPlace (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 471 | Entidade-Foco: dbr:Live_at_The_Triple_Door_(The_Courage_album)
+  ❌ Alucinado: dbp:city
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.36 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 472 | Entidade-Foco: dbr:Jimmie_Heuga
+  ❌ Alucinado: dbo:nearestCity
+  ⚠️ Melhor opção encontrada: dbo:birthPlace (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 472 | Entidade-Foco: dbr:Jurgens_Site
+  ❌ Alucinado: dbo:deathPlace
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:United_States
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Trinity_School,_Brentwood
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Lausanne
+
+[REJEITADO] Pergunta ID: 481 | Entidade-Foco: dbr:Harry_Connick,_Jr.
+  ❌ Alucinado: dbo:judging
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: -0.01 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 481 | Entidade-Foco: dbr:Brian_Dunkleman
+  ❌ Alucinado: dbp:host
+  ⚠️ Melhor opção encontrada: dbo:starring (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Cornell_University_Press
+
+[REJEITADO] Pergunta ID: 483 | Entidade-Foco: dbr:Ham
+  ❌ Alucinado: dbp:keyFood
+  ⚠️ Melhor opção encontrada: dbo:ingredient (Score: 0.36 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 485 | Entidade-Foco: dbr:Yashpal_Kapur
+  ❌ Alucinado: dbp:owner
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 485 | Entidade-Foco: dbr:The_National_Herald_(India)
+  ❌ Alucinado: dbp:party
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 486 | Entidade-Foco: dbr:NBC
+  ❌ Alucinado: dbo:show
+  ⚠️ Melhor opção encontrada: dbp:television (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Full-size_car
+
+[REJEITADO] Pergunta ID: 488 | Entidade-Foco: dbr:Plymouth,_Vermont
+  ❌ Alucinado: dbo:predecessor
+  ⚠️ Melhor opção encontrada: dbp:office (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 493 | Entidade-Foco: dbr:Stan_Kroenke
+  ❌ Alucinado: dbp:operator
+  ⚠️ Melhor opção encontrada: dbo:occupation (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 495 | Entidade-Foco: dbr:John_McEwen
+  ❌ Alucinado: dbo:commander
+  ⚠️ Melhor opção encontrada: dbo:leader (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 495 | Entidade-Foco: dbr:Park_Chung-hee
+  ❌ Alucinado: dbp:commander
+  ⚠️ Melhor opção encontrada: dbp:wordnet_type (Score: 0.11 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 496 | Entidade-Foco: dbr:Bombshell_(Smash)
+  ❌ Alucinado: dbo:employer
+  ⚠️ Melhor opção encontrada: dbp:production (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 497 | Entidade-Foco: dbr:Kazuo_Hirai
+  ❌ Alucinado: dbp:headquarters
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.11 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 498 | Entidade-Foco: dbr:Continental_Army
+  ❌ Alucinado: dbo:president
+  ⚠️ Melhor opção encontrada: dbp:leader (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 500 | Entidade-Foco: dbr:Menetries's_warbler
+  ❌ Alucinado: dbo:binomialAuthority
+  ✅ Trocado p/: dbp:authority (Score: 0.64)
+  🔍 Top 3 opções avaliadas: [dbp:authority (0.64), dbp:from (0.15), dbp:genus (0.14)]
+
+[REJEITADO] Pergunta ID: 501 | Entidade-Foco: dbr:Elliot_Goldenthal
+  ❌ Alucinado: dbp:screenplay
+  ⚠️ Melhor opção encontrada: dbp:producer (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 501 | Entidade-Foco: dbr:Akiva_Goldsman
+  ❌ Alucinado: dbp:musicComposer
+  ⚠️ Melhor opção encontrada: dbp:studio (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 503 | Entidade-Foco: dbr:Madison_River
+  ❌ Alucinado: dbp:athletics
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.31 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 506 | Entidade-Foco: dbr:Lucky_You_(film)
+  ❌ Alucinado: dbo:screenwriter
+  ✅ Trocado p/: dbp:screenplay (Score: 0.82)
+  🔍 Top 3 opções avaliadas: [dbp:screenplay (0.82), dbo:writer (0.74), dbo:director (0.66)]
+
+[REJEITADO] Pergunta ID: 510 | Entidade-Foco: dbr:Marvell_Technology_Group
+  ❌ Alucinado: dbp:branch
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.18 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 515 | Entidade-Foco: dbr:Jefferson_North_Assembly
+  ❌ Alucinado: dbo:assembly
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.12 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 519 | Entidade-Foco: dbr:Harvard_Medical_School
+  ❌ Alucinado: dbo:location
+  ✅ Trocado p/: dbo:city (Score: 0.65)
+  🔍 Top 3 opções avaliadas: [dbo:city (0.65), dbp:city (0.65), dbp:country (0.64)]
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Mona_Marshall
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Jerry_Bock
+
+[REJEITADO] Pergunta ID: 522 | Entidade-Foco: dbr:Yosemite_National_Park
+  ❌ Alucinado: dbp:peaks
+  ⚠️ Melhor opção encontrada: dbp:augHighF (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 523 | Entidade-Foco: dbr:Naval_Support_Activity_Naples
+  ❌ Alucinado: dbp:part
+  ⚠️ Melhor opção encontrada: dbp:image (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 524 | Entidade-Foco: dbr:Colony_of_Virginia
+  ❌ Alucinado: dbo:allegiance
+  ✅ Trocado p/: dbp:allegiance (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:allegiance (1.00), dbo:religion (0.44), dbp:religion (0.44)]
+
+[REJEITADO] Pergunta ID: 527 | Entidade-Foco: dbr:Dafydd_Benfras
+  ❌ Alucinado: dbp:state
+  ⚠️ Melhor opção encontrada: dbo:country (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 527 | Entidade-Foco: dbr:Jasmine_Lowson
+  ❌ Alucinado: dbp:state
+  ⚠️ Melhor opção encontrada: dbo:stateOfOrigin (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 529 | Entidade-Foco: dbr:Houston_Fort_Bend_Airport
+  ❌ Alucinado: dbp:destinations
+  ⚠️ Melhor opção encontrada: dbo:location (Score: 0.55 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 530 | Entidade-Foco: dbr:Gaza–Israel_conflict
+  ❌ Alucinado: dbo:service
+  ⚠️ Melhor opção encontrada: dbp:war (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 530 | Entidade-Foco: dbr:Jerusalem_Institute_of_Justice
+  ❌ Alucinado: dbp:services
+  ✅ Trocado p/: dbo:service (Score: 0.92)
+  🔍 Top 3 opções avaliadas: [dbo:service (0.92), dbo:description (0.38), dbp:name (0.31)]
+
+[REJEITADO] Pergunta ID: 531 | Entidade-Foco: dbr:Raymond_Conner
+  ❌ Alucinado: dbo:keyPerson
+  ⚠️ Melhor opção encontrada: dbo:personFunction (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 535 | Entidade-Foco: dbr:Microsoft_Azure
+  ❌ Alucinado: dbp:services
+  ✅ Trocado p/: dbo:service (Score: 0.92)
+  🔍 Top 3 opções avaliadas: [dbo:service (0.92), dbp:platform (0.43), dbo:description (0.38)]
+
+[REJEITADO] Pergunta ID: 537 | Entidade-Foco: dbr:Tulane_Green_Wave
+  ❌ Alucinado: dbo:knownFor
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 539 | Entidade-Foco: dbr:Butters'_Very_Own_Episode
+  ❌ Alucinado: dbo:episode
+  ✅ Trocado p/: dbp:episode (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:episode (1.00), dbp:episodeList (0.66), dbp:season (0.54)]
+
+[REJEITADO] Pergunta ID: 541 | Entidade-Foco: dbr:Shawn_Fanning
+  ❌ Alucinado: dbp:developer
+  ⚠️ Melhor opção encontrada: dbp:occupation (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 542 | Entidade-Foco: dbr:Bass_guitar
+  ❌ Alucinado: dbo:keyMusicGenre
+  ⚠️ Melhor opção encontrada: dbp:instruments (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 544 | Entidade-Foco: dbr:Kimihiro_Watanuki
+  ❌ Alucinado: dbp:voices
+  ✅ Trocado p/: dbp:voice (Score: 0.88)
+  🔍 Top 3 opções avaliadas: [dbp:voice (0.88), dbo:voice (0.88), dbp:name (0.37)]
+
+[CORREÇÃO] Pergunta ID: 544 | Entidade-Foco: dbr:Allen_Walker
+  ❌ Alucinado: dbp:voices
+  ✅ Trocado p/: dbp:voice (Score: 0.88)
+  🔍 Top 3 opções avaliadas: [dbp:voice (0.88), dbo:voice (0.88), dbp:name (0.37)]
+
+[REJEITADO] Pergunta ID: 545 | Entidade-Foco: dbr:Siege_of_Fort_Recovery
+  ❌ Alucinado: dbo:restingPlace
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 545 | Entidade-Foco: dbr:North_Bend,_Ohio
+  ❌ Alucinado: dbp:restingPlace
+  ✅ Trocado p/: dbo:restingPlace (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:restingPlace (1.00), dbp:location (0.43), dbo:location (0.43)]
+
+[REJEITADO] Pergunta ID: 546 | Entidade-Foco: dbr:Purvis_Eureka
+  ❌ Alucinado: dbp:type
+  ⚠️ Melhor opção encontrada: dbp:class (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 547 | Entidade-Foco: dbr:Easy_Street_(film)
+  ❌ Alucinado: dbp:editor
+  ⚠️ Melhor opção encontrada: dbp:wordnet_type (Score: 0.16 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 548 | Entidade-Foco: dbr:Jonathan_Haskell
+  ❌ Alucinado: dbo:battles
+  ✅ Trocado p/: dbp:battles (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:battles (1.00), dbo:battle (0.94), dbo:militaryCommand (0.46)]
+
+[REJEITADO] Pergunta ID: 549 | Entidade-Foco: dbr:Singhasan_Battisi_(TV_series)
+  ❌ Alucinado: dbp:starring
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.03 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 550 | Entidade-Foco: dbr:Toll_Global_Express
+  ❌ Alucinado: dbo:country
+  ⚠️ Melhor opção encontrada: dbo:wikiPageDisambiguates (Score: 0.11 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 551 | Entidade-Foco: dbr:Tonkin_Campaign
+  ❌ Alucinado: dbp:territorium
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.10 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 554 | Entidade-Foco: dbr:Detroit_Pistons
+  ❌ Alucinado: dbo:writer
+  ⚠️ Melhor opção encontrada: dbp:coach (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 555 | Entidade-Foco: dbr:One_of_These_Days_(instrumental)
+  ❌ Alucinado: dbp:music
+  ✅ Trocado p/: dbp:genre (Score: 0.60)
+  🔍 Top 3 opções avaliadas: [dbp:genre (0.60), dbo:genre (0.60), dbo:album (0.55)]
+
+[CORREÇÃO] Pergunta ID: 555 | Entidade-Foco: dbr:The_Trial_(song)
+  ❌ Alucinado: dbp:music
+  ✅ Trocado p/: dbo:genre (Score: 0.60)
+  🔍 Top 3 opções avaliadas: [dbo:genre (0.60), dbp:genre (0.60), dbp:album (0.55)]
+
+[CORREÇÃO] Pergunta ID: 556 | Entidade-Foco: dbr:Julie_Hastings
+  ❌ Alucinado: dbp:club
+  ✅ Trocado p/: dbo:club (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:club (1.00), dbp:curlingClub (0.57), dbp:rd3Team (0.36)]
+
+[CORREÇÃO] Pergunta ID: 557 | Entidade-Foco: dbr:Upper_Neretva
+  ❌ Alucinado: dbo:river
+  ✅ Trocado p/: dbo:riverMouth (Score: 0.78)
+  🔍 Top 3 opções avaliadas: [dbo:riverMouth (0.78), dbp:riverSystem (0.76), dbp:tributariesRight (0.69)]
+
+[REJEITADO] Pergunta ID: 558 | Entidade-Foco: dbr:Indiana
+  ❌ Alucinado: dbo:affiliation
+  ⚠️ Melhor opção encontrada: dbp:allegiance (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 558 | Entidade-Foco: dbr:Kaplan,_Inc.
+  ❌ Alucinado: dbo:location
+  ✅ Trocado p/: dbp:locationCity (Score: 0.77)
+  🔍 Top 3 opções avaliadas: [dbp:locationCity (0.77), dbo:product (0.45), dbp:products (0.45)]
+
+[REJEITADO] Pergunta ID: 559 | Entidade-Foco: dbr:1211_Avenue_of_the_Americas
+  ❌ Alucinado: dbo:office
+  ⚠️ Melhor opção encontrada: dbp:developer (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 562 | Entidade-Foco: dbr:Kingston,_Ontario
+  ❌ Alucinado: dbo:riverMouth
+  ✅ Trocado p/: dbp:mouthLocation (Score: 0.65)
+  🔍 Top 3 opções avaliadas: [dbp:mouthLocation (0.65), dbo:mouthPlace (0.64), dbo:mouthMountain (0.61)]
+
+[REJEITADO] Pergunta ID: 565 | Entidade-Foco: dbr:Jim_Harris_(entrepreneur)
+  ❌ Alucinado: dbo:foundationPlace
+  ⚠️ Melhor opção encontrada: dbp:founders (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 566 | Entidade-Foco: dbr:McDonnell_Aircraft
+  ❌ Alucinado: dbo:employer
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 567 | Entidade-Foco: dbr:Lightning_McQueen
+  ❌ Alucinado: dbo:language
+  ⚠️ Melhor opção encontrada: dbp:voice (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 568 | Entidade-Foco: dbr:Kaplan,_Inc.
+  ❌ Alucinado: dbo:campus
+  ⚠️ Melhor opção encontrada: dbo:education (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 568 | Entidade-Foco: dbr:Iowa
+  ❌ Alucinado: dbp:affiliations
+  ⚠️ Melhor opção encontrada: dbp:allegiance (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 569 | Entidade-Foco: dbr:Jazz_fusion
+  ❌ Alucinado: dbo:publisher
+  ⚠️ Melhor opção encontrada: dbp:onlinebooks (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 570 | Entidade-Foco: dbr:Secrets_and_Lies_(U.S._TV_series)
+  ❌ Alucinado: dbp:distributor
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 571 | Entidade-Foco: dbr:Robert_Bernstein_(comics)
+  ❌ Alucinado: dbp:writer
+  ✅ Trocado p/: dbo:writer (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:writer (1.00), dbp:writers (0.93), dbp:write (0.78)]
+
+[CORREÇÃO] Pergunta ID: 572 | Entidade-Foco: dbr:Lancy
+  ❌ Alucinado: dbo:neighboringMunicipalities
+  ✅ Trocado p/: dbp:neighboringMunicipalities (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:neighboringMunicipalities (1.00), dbo:neighboringMunicipality (0.89), dbp:municipalityType (0.63)]
+
+[REJEITADO] Pergunta ID: 574 | Entidade-Foco: dbr:Toms_Creek_(Monocacy_River)
+  ❌ Alucinado: dbo:leftTributary
+  ⚠️ Melhor opção encontrada: dbo:wikiPageRedirects (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 575 | Entidade-Foco: dbr:Baikal_Mountains
+  ❌ Alucinado: dbo:mouthMountain
+  ⚠️ Melhor opção encontrada: dbo:mountainRange (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 576 | Entidade-Foco: dbr:National_Medal_of_Science
+  ❌ Alucinado: dbo:supervisedBy
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.32 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 577 | Entidade-Foco: dbr:CFRX
+  ❌ Alucinado: dbp:location
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 577 | Entidade-Foco: dbr:Anthony_Raymond_Ceresko
+  ❌ Alucinado: dbp:location
+  ⚠️ Melhor opção encontrada: dbo:birthPlace (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 578 | Entidade-Foco: dbr:Joey_McIntyre
+  ❌ Alucinado: dbo:actress
+  ⚠️ Melhor opção encontrada: dbp:starring (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 582 | Entidade-Foco: dbr:Switzerland_at_the_2008_Summer_Olympics
+  ❌ Alucinado: dbo:flagbearer
+  ✅ Trocado p/: dbp:flagbearer (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:flagbearer (1.00), dbp:location (0.21), dbp:silver (0.20)]
+
+[CORREÇÃO] Pergunta ID: 582 | Entidade-Foco: dbr:Switzerland_at_the_2008_Summer_Olympics
+  ❌ Alucinado: dbo:sport
+  ✅ Trocado p/: dbp:sports (Score: 0.93)
+  🔍 Top 3 opções avaliadas: [dbp:sports (0.93), dbp:games (0.64), dbp:appearances (0.42)]
+
+[REJEITADO] Pergunta ID: 583 | Entidade-Foco: dbr:Young_Lords
+  ❌ Alucinado: dbp:foundation
+  ⚠️ Melhor opção encontrada: dbp:logo (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 584 | Entidade-Foco: dbr:Angelina_Jolie
+  ❌ Alucinado: dbp:father
+  ⚠️ Melhor opção encontrada: dbo:child (Score: 0.59 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 585 | Entidade-Foco: dbr:Multilingualism
+  ❌ Alucinado: dbo:programmingLanguage
+  ✅ Trocado p/: dbp:languages (Score: 0.67)
+  🔍 Top 3 opções avaliadas: [dbp:languages (0.67), dbp:language (0.66), dbo:language (0.66)]
+
+[REJEITADO] Pergunta ID: 587 | Entidade-Foco: dbr:Snake_Island_(Black_Sea)
+  ❌ Alucinado: dbo:location
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 589 | Entidade-Foco: dbr:Josef_Bühler
+  ❌ Alucinado: dbo:party
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.36 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 594 | Entidade-Foco: dbr:Zambezi_River_Authority
+  ❌ Alucinado: dbp:river
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.31 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 596 | Entidade-Foco: dbr:Sings_Kristofferson
+  ❌ Alucinado: dbo:artist
+  ✅ Trocado p/: dbp:artist (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:artist (1.00), dbp:name (0.47), dbo:thumbnail (0.42)]
+
+[REJEITADO] Pergunta ID: 598 | Entidade-Foco: dbr:Glen_and_Les_Charles
+  ❌ Alucinado: dbp:producer
+  ⚠️ Melhor opção encontrada: dbp:creator (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 599 | Entidade-Foco: dbr:Chicago_Bulls
+  ❌ Alucinado: dbo:sport
+  ⚠️ Melhor opção encontrada: dbo:league (Score: 0.55 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 600 | Entidade-Foco: dbr:Kumta
+  ❌ Alucinado: dbp:owner
+  ⚠️ Melhor opção encontrada: dbp:leaderTitle (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 600 | Entidade-Foco: dbr:The_National_Herald_(India)
+  ❌ Alucinado: dbp:leader
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.11 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 602 | Entidade-Foco: dbr:Pulau_Ubin
+  ❌ Alucinado: dbp:largestCity
+  ✅ Trocado p/: dbp:countryLargestCity (Score: 0.85)
+  🔍 Top 3 opções avaliadas: [dbp:countryLargestCity (0.85), dbp:countryLargestCityType (0.76), dbp:location (0.36)]
+
+[CORREÇÃO] Pergunta ID: 603 | Entidade-Foco: dbr:A_Todo_Romantic_Style
+  ❌ Alucinado: dbo:musicalArtist
+  ✅ Trocado p/: dbp:artist (Score: 0.79)
+  🔍 Top 3 opções avaliadas: [dbp:artist (0.79), dbp:genre (0.42), dbp:writer (0.40)]
+
+[REJEITADO] Pergunta ID: 604 | Entidade-Foco: dbr:Karinga_Bay
+  ❌ Alucinado: dbo:race
+  ⚠️ Melhor opção encontrada: dbp:sire (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 606 | Entidade-Foco: dbr:Ape
+  ❌ Alucinado: dbo:location
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 607 | Entidade-Foco: dbr:Lyons_Township_High_School
+  ❌ Alucinado: dbo:nickname
+  ✅ Trocado p/: dbp:nickname (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:nickname (1.00), dbp:name (0.63), dbp:otherName (0.62)]
+
+[REJEITADO] Pergunta ID: 607 | Entidade-Foco: dbr:Wheaton_College_(Massachusetts)
+  ❌ Alucinado: dbp:highschool
+  ⚠️ Melhor opção encontrada: dbp:college (Score: 0.59 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 609 | Entidade-Foco: dbr:Warner_Bros._Animation
+  ❌ Alucinado: dbp:divisions
+  ⚠️ Melhor opção encontrada: dbo:subsidiary (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 610 | Entidade-Foco: dbr:Simon_Fuller
+  ❌ Alucinado: dbp:director
+  ⚠️ Melhor opção encontrada: dbp:executiveProducer (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 614 | Entidade-Foco: dbr:Diprotodontia
+  ❌ Alucinado: dbp:taxonomy
+  ✅ Trocado p/: dbp:taxon (Score: 0.88)
+  🔍 Top 3 opções avaliadas: [dbp:taxon (0.88), dbp:label (0.43), dbo:description (0.34)]
+
+[CORREÇÃO] Pergunta ID: 615 | Entidade-Foco: dbr:Clinton_Foundation
+  ❌ Alucinado: dbo:keyPeople
+  ✅ Trocado p/: dbp:keyPeople (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:keyPeople (1.00), dbo:keyPerson (0.86), dbp:type (0.41)]
+
+[CORREÇÃO] Pergunta ID: 616 | Entidade-Foco: dbr:New_Mexico
+  ❌ Alucinado: dbo:foundedIn
+  ✅ Trocado p/: dbp:founded (Score: 0.91)
+  🔍 Top 3 opções avaliadas: [dbp:founded (0.91), dbp:foundingLocation (0.71), dbp:locatedIn (0.61)]
+
+[CORREÇÃO] Pergunta ID: 616 | Entidade-Foco: dbr:Outlook.com
+  ❌ Alucinado: dbp:services
+  ✅ Trocado p/: dbp:onlineService (Score: 0.65)
+  🔍 Top 3 opções avaliadas: [dbp:onlineService (0.65), dbo:description (0.38), dbp:registration (0.36)]
+
+[REJEITADO] Pergunta ID: 617 | Entidade-Foco: dbr:The_Spirit_of_Christmas_(short_film)
+  ❌ Alucinado: dbo:voice
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.01 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 618 | Entidade-Foco: dbr:Buckhurst_Hill_County_High_School
+  ❌ Alucinado: dbo:jurisdiction
+  ⚠️ Melhor opção encontrada: dbp:localAuthority (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 620 | Entidade-Foco: dbr:Jo_Garcia
+  ❌ Alucinado: dbo:knownFor
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 622 | Entidade-Foco: dbr:Connecticut_Colony
+  ❌ Alucinado: dbo:placeOfDeath
+  ✅ Trocado p/: dbp:deathPlace (Score: 0.85)
+  🔍 Top 3 opções avaliadas: [dbp:deathPlace (0.85), dbo:deathPlace (0.85), dbo:place (0.68)]
+
+[REJEITADO] Pergunta ID: 623 | Entidade-Foco: dbr:FremantleMedia
+  ❌ Alucinado: dbp:distributor
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 624 | Entidade-Foco: dbr:Elie_Wiesel
+  ❌ Alucinado: dbo:award
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 625 | Entidade-Foco: dbr:Marie_Sisters
+  ❌ Alucinado: dbo:producer
+  ✅ Trocado p/: dbp:producer (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:producer (1.00), dbp:artist (0.41), dbp:released (0.39)]
+
+[REJEITADO] Pergunta ID: 626 | Entidade-Foco: dbr:Yang_Yilin
+  ❌ Alucinado: dbo:origin
+  ⚠️ Melhor opção encontrada: dbp:birthPlace (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 628 | Entidade-Foco: dbr:Morocco
+  ❌ Alucinado: dbo:battles
+  ✅ Trocado p/: dbp:battles (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:battles (1.00), dbo:battle (0.94), dbp:fightingOutOf (0.61)]
+
+[REJEITADO] Pergunta ID: 630 | Entidade-Foco: dbr:Russell_T_Davies
+  ❌ Alucinado: dbo:importantWork
+  ⚠️ Melhor opção encontrada: dbo:knownFor (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 631 | Entidade-Foco: dbr:FC_Barcelona
+  ❌ Alucinado: dbp:currentteam
+  ⚠️ Melhor opção encontrada: dbp:currentclub (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 634 | Entidade-Foco: dbr:Deborah_Turness
+  ❌ Alucinado: dbo:importantPlace
+  ✅ Trocado p/: dbo:birthPlace (Score: 0.60)
+  🔍 Top 3 opções avaliadas: [dbo:birthPlace (0.60), dbp:birthPlace (0.60), dbp:occupation (0.31)]
+
+[REJEITADO] Pergunta ID: 638 | Entidade-Foco: dbr:Limited_liability_company
+  ❌ Alucinado: dbo:formerPartner
+  ⚠️ Melhor opção encontrada: dbo:owner (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 639 | Entidade-Foco: dbr:1999_San_Marino_Grand_Prix
+  ❌ Alucinado: dbp:policyDriver
+  ⚠️ Melhor opção encontrada: dbp:thirdDriver (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 639 | Entidade-Foco: dbr:1997_Canadian_Grand_Prix
+  ❌ Alucinado: dbp:driver
+  ✅ Trocado p/: dbp:fastDriver (Score: 0.80)
+  🔍 Top 3 opções avaliadas: [dbp:fastDriver (0.80), dbo:thirdDriver (0.78), dbp:thirdDriver (0.78)]
+
+[CORREÇÃO] Pergunta ID: 640 | Entidade-Foco: dbr:John_A._Danaher_III
+  ❌ Alucinado: dbp:workplace
+  ✅ Trocado p/: dbp:office (Score: 0.72)
+  🔍 Top 3 opções avaliadas: [dbp:office (0.72), dbp:occupation (0.67), dbo:education (0.41)]
+
+[CORREÇÃO] Pergunta ID: 642 | Entidade-Foco: dbr:Live_in_Detroit,_MI
+  ❌ Alucinado: dbo:recordedIn
+  ✅ Trocado p/: dbp:recorded (Score: 0.86)
+  🔍 Top 3 opções avaliadas: [dbp:recorded (0.86), dbp:released (0.44), dbp:producer (0.42)]
+
+[REJEITADO] Pergunta ID: 643 | Entidade-Foco: dbr:QDT
+  ❌ Alucinado: dbp:membership
+  ⚠️ Melhor opção encontrada: dbp:currentMembers (Score: 0.60 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 644 | Entidade-Foco: dbr:West_Sacramento,_California
+  ❌ Alucinado: dbo:highSchool
+  ✅ Trocado p/: dbo:highschool (Score: 0.90)
+  🔍 Top 3 opções avaliadas: [dbo:highschool (0.90), dbp:julHighF (0.52), dbp:febHighF (0.51)]
+
+[REJEITADO] Pergunta ID: 645 | Entidade-Foco: dbr:2012_Campeonato_Brasileiro_Série_A
+  ❌ Alucinado: dbo:division
+  ⚠️ Melhor opção encontrada: dbp:relegated (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 646 | Entidade-Foco: dbr:Philippine_Ports_Authority
+  ❌ Alucinado: dbp:stateOfOrigin
+  ⚠️ Melhor opção encontrada: dbo:location (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 646 | Entidade-Foco: dbr:Ruben_J._Villote
+  ❌ Alucinado: dbp:successor
+  ⚠️ Melhor opção encontrada: dbp:founder (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 648 | Entidade-Foco: dbr:O.co_Coliseum
+  ❌ Alucinado: dbo:location
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 649 | Entidade-Foco: dbr:Ulrich_II,_Count_of_East_Frisia
+  ❌ Alucinado: dbo:birthPlace
+  ⚠️ Melhor opção encontrada: dbp:deathPlace (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 650 | Entidade-Foco: dbr:Michael_Jeffery
+  ❌ Alucinado: dbo:primeMinister
+  ✅ Trocado p/: dbp:primeminister (Score: 0.71)
+  🔍 Top 3 opções avaliadas: [dbp:primeminister (0.71), dbo:governor (0.58), dbp:governor (0.58)]
+
+[CORREÇÃO] Pergunta ID: 650 | Entidade-Foco: dbr:William_Deane
+  ❌ Alucinado: dbp:minister
+  ✅ Trocado p/: dbo:primeMinister (Score: 0.75)
+  🔍 Top 3 opções avaliadas: [dbo:primeMinister (0.75), dbp:governorGeneral (0.59), dbo:appointer (0.53)]
+
+[REJEITADO] Pergunta ID: 652 | Entidade-Foco: dbr:Balanidae
+  ❌ Alucinado: dbo:family
+  ⚠️ Melhor opção encontrada: dbp:displayParents (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 654 | Entidade-Foco: dbr:Ape
+  ❌ Alucinado: dbo:author
+  ⚠️ Melhor opção encontrada: dbp:title (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 655 | Entidade-Foco: dbr:National_Park_Service
+  ❌ Alucinado: dbo:governedBy
+  ✅ Trocado p/: dbp:governingBody (Score: 0.73)
+  🔍 Top 3 opções avaliadas: [dbp:governingBody (0.73), dbp:authority (0.65), dbp:jurisdiction (0.55)]
+
+[REJEITADO] Pergunta ID: 656 | Entidade-Foco: dbr:Roberto_Clemente_Bridge
+  ❌ Alucinado: dbp:municipality
+  ⚠️ Melhor opção encontrada: dbo:locatedInArea (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 657 | Entidade-Foco: dbr:The_Conglomerate_(American_group)
+  ❌ Alucinado: dbp:currentMembers
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.16 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 658 | Entidade-Foco: dbr:Russell_T_Davies
+  ❌ Alucinado: dbo:notableWork
+  ⚠️ Melhor opção encontrada: dbp:author (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 659 | Entidade-Foco: dbr:Arlington_County,_Virginia
+  ❌ Alucinado: dbo:garnison
+  ⚠️ Melhor opção encontrada: dbo:country (Score: 0.35 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 659 | Entidade-Foco: dbr:The_Pentagon
+  ❌ Alucinado: dbp:garnison
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.36 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 660 | Entidade-Foco: dbr:United_States_dollar
+  ❌ Alucinado: dbo:producer
+  ⚠️ Melhor opção encontrada: dbp:products (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 664 | Entidade-Foco: dbr:Kenny_Dies
+  ❌ Alucinado: dbp:musicComposer
+  ✅ Trocado p/: dbp:music (Score: 0.62)
+  🔍 Top 3 opções avaliadas: [dbp:music (0.62), dbp:director (0.33), dbp:writer (0.33)]
+
+[CORREÇÃO] Pergunta ID: 665 | Entidade-Foco: dbr:Aegean_Sea
+  ❌ Alucinado: dbo:flow
+  ✅ Trocado p/: dbp:inflow (Score: 0.67)
+  🔍 Top 3 opções avaliadas: [dbp:inflow (0.67), dbo:inflow (0.67), dbo:outflow (0.66)]
+
+[REJEITADO] Pergunta ID: 667 | Entidade-Foco: dbr:Africa_'70_(band)
+  ❌ Alucinado: dbp:associatedMusicalArtist
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.02 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 667 | Entidade-Foco: dbr:Tony_Allen_(musician)
+  ❌ Alucinado: dbp:associatedMusicalArtist
+  ✅ Trocado p/: dbo:associatedMusicalArtist (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:associatedMusicalArtist (1.00), dbp:artist (0.67), dbo:associatedBand (0.59)]
+
+[REJEITADO] Pergunta ID: 670 | Entidade-Foco: dbr:Bream_Bay
+  ❌ Alucinado: dbp:founder
+  ⚠️ Melhor opção encontrada: dbo:politicalLeader (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 672 | Entidade-Foco: dbr:SFOR
+  ❌ Alucinado: dbo:inflict
+  ⚠️ Melhor opção encontrada: dbo:wikiPageRedirects (Score: 0.04 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 673 | Entidade-Foco: dbr:Alexius_Meinong
+  ❌ Alucinado: dbp:thesis
+  ⚠️ Melhor opção encontrada: dbp:notableIdeas (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 675 | Entidade-Foco: dbr:INS_Viraat_(R22)
+  ❌ Alucinado: dbo:servingRailwayLine
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: -0.03 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 676 | Entidade-Foco: dbr:Hudson_Highlands_State_Park
+  ❌ Alucinado: dbo:river
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 676 | Entidade-Foco: dbr:Troy,_New_York
+  ❌ Alucinado: dbo:river
+  ⚠️ Melhor opção encontrada: dbo:areaWater (Score: 0.52 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 677 | Entidade-Foco: dbr:Ivan_Toplak
+  ❌ Alucinado: dbp:education
+  ⚠️ Melhor opção encontrada: dbp:goals (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 681 | Entidade-Foco: dbr:Willie_Nelson_and_Family
+  ❌ Alucinado: dbo:subsequentWork
+  ⚠️ Melhor opção encontrada: dbp:nextTitle (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 682 | Entidade-Foco: dbr:Fernando_Augustin
+  ❌ Alucinado: dbo:birthPlace
+  ⚠️ Melhor opção encontrada: dbp:birthDate (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 682 | Entidade-Foco: dbr:Ludovic_Boi
+  ❌ Alucinado: dbo:residence
+  ⚠️ Melhor opção encontrada: dbo:birthPlace (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 683 | Entidade-Foco: dbr:Eclipse_(song)
+  ❌ Alucinado: dbo:song
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 684 | Entidade-Foco: dbr:Prime_Minister's_House_(Colombo)
+  ❌ Alucinado: dbp:membership
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.16 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 685 | Entidade-Foco: dbr:National_and_Kapodistrian_University_of_Athens
+  ❌ Alucinado: dbp:awards
+  ✅ Trocado p/: dbo:award (Score: 0.86)
+  🔍 Top 3 opções avaliadas: [dbo:award (0.86), dbp:name (0.39), dbo:education (0.38)]
+
+[REJEITADO] Pergunta ID: 688 | Entidade-Foco: dbr:Cable-stayed_bridge
+  ❌ Alucinado: dbo:crosses
+  ⚠️ Melhor opção encontrada: dbp:material (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 690 | Entidade-Foco: dbr:Ron_Grainer
+  ❌ Alucinado: dbo:startingMusicComposer
+  ✅ Trocado p/: dbo:musicComposer (Score: 0.81)
+  🔍 Top 3 opções avaliadas: [dbo:musicComposer (0.81), dbp:themeMusicComposer (0.75), dbp:composer (0.74)]
+
+[CORREÇÃO] Pergunta ID: 691 | Entidade-Foco: dbr:The_Shooting_of_Dan_McGrew_(1924_film)
+  ❌ Alucinado: dbp:author
+  ✅ Trocado p/: dbp:writer (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbp:writer (0.70), dbo:writer (0.70), dbo:director (0.45)]
+
+[REJEITADO] Pergunta ID: 692 | Entidade-Foco: dbr:Raymond_Johansen
+  ❌ Alucinado: dbo:mayor
+  ⚠️ Melhor opção encontrada: dbp:leader (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 693 | Entidade-Foco: dbr:Gloria_Schaffer
+  ❌ Alucinado: dbp:region
+  ⚠️ Melhor opção encontrada: dbp:state (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 694 | Entidade-Foco: dbr:Defenceman
+  ❌ Alucinado: dbp:defender
+  ⚠️ Melhor opção encontrada: dbp:playerPositions (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 695 | Entidade-Foco: dbr:Provinces_of_Zambia
+  ❌ Alucinado: dbp:provinces
+  ⚠️ Melhor opção encontrada: dbp:territory (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 697 | Entidade-Foco: dbr:Flour
+  ❌ Alucinado: dbo:food
+  ⚠️ Melhor opção encontrada: dbp:content (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 698 | Entidade-Foco: dbr:Jadavpur_(Lok_Sabha_constituency)
+  ❌ Alucinado: dbo:constituency
+  ⚠️ Melhor opção encontrada: dbo:wikiPageRedirects (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 699 | Entidade-Foco: dbr:Somerset,_Massachusetts
+  ❌ Alucinado: dbp:rival
+  ⚠️ Melhor opção encontrada: dbp:city (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 700 | Entidade-Foco: dbr:Jim_Sasser
+  ❌ Alucinado: dbo:president
+  ✅ Trocado p/: dbp:president (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:president (1.00), dbp:nominee (0.57), dbp:candidate (0.57)]
+
+[REJEITADO] Pergunta ID: 702 | Entidade-Foco: dbr:Open_Society_Foundations
+  ❌ Alucinado: dbp:wife
+  ⚠️ Melhor opção encontrada: dbo:owner (Score: 0.51 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 702 | Entidade-Foco: dbr:Susan_Weber_Soros
+  ❌ Alucinado: dbp:worker
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.10 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 704 | Entidade-Foco: dbr:Terminator_3:_Rise_of_the_Machines
+  ❌ Alucinado: dbp:sculptor
+  ⚠️ Melhor opção encontrada: dbp:artist (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 704 | Entidade-Foco: dbr:Josh_Friedman
+  ❌ Alucinado: dbp:figures
+  ⚠️ Melhor opção encontrada: dbp:caption (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 705 | Entidade-Foco: dbr:American_Football_League
+  ❌ Alucinado: dbo:league
+  ✅ Trocado p/: dbp:league (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:league (1.00), dbp:teams (0.66), dbp:playingTeam (0.60)]
+
+[CORREÇÃO] Pergunta ID: 706 | Entidade-Foco: dbr:French_Southern_and_Antarctic_Lands
+  ❌ Alucinado: dbo:currency
+  ✅ Trocado p/: dbp:currency (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:currency (1.00), dbp:currencyCode (0.76), dbp:capital (0.42)]
+
+[CORREÇÃO] Pergunta ID: 707 | Entidade-Foco: dbr:Amalgamated_Association_of_Iron_and_Steel_Workers
+  ❌ Alucinado: dbp:affiliations
+  ✅ Trocado p/: dbp:affiliation (Score: 0.96)
+  🔍 Top 3 opções avaliadas: [dbp:affiliation (0.96), dbo:affiliation (0.96), dbp:founded (0.55)]
+
+[REJEITADO] Pergunta ID: 708 | Entidade-Foco: dbr:John_Drayton
+  ❌ Alucinado: dbo:appinter
+  ⚠️ Melhor opção encontrada: dbp:appointer (Score: 0.30 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 708 | Entidade-Foco: dbr:United_States_House_of_Representatives_elections,_1788_and_1789
+  ❌ Alucinado: dbp:leader
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.11 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 712 | Entidade-Foco: dbr:James_H._Fields
+  ❌ Alucinado: dbp:placeOfBurial
+  ⚠️ Melhor opção encontrada: dbp:deathPlace (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 716 | Entidade-Foco: dbr:Jon_Speelman
+  ❌ Alucinado: dbp:knownFor
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 717 | Entidade-Foco: dbr:Padmé_Amidala
+  ❌ Alucinado: dbp:family
+  ✅ Trocado p/: dbp:relatives (Score: 0.80)
+  🔍 Top 3 opções avaliadas: [dbp:relatives (0.80), dbp:spouse (0.53), dbo:spouse (0.53)]
+
+[CORREÇÃO] Pergunta ID: 718 | Entidade-Foco: dbr:Google_Web_Toolkit
+  ❌ Alucinado: dbp:writer
+  ✅ Trocado p/: dbp:author (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbp:author (0.70), dbo:author (0.70), dbp:genre (0.47)]
+
+[CORREÇÃO] Pergunta ID: 718 | Entidade-Foco: dbr:PlayN
+  ❌ Alucinado: dbp:writer
+  ✅ Trocado p/: dbp:author (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbp:author (0.70), dbo:author (0.70), dbp:name (0.33)]
+
+[CORREÇÃO] Pergunta ID: 720 | Entidade-Foco: dbr:Dodge
+  ❌ Alucinado: dbp:platform
+  ✅ Trocado p/: dbo:automobilePlatform (Score: 0.62)
+  🔍 Top 3 opções avaliadas: [dbo:automobilePlatform (0.62), dbo:product (0.42), dbp:products (0.40)]
+
+[CORREÇÃO] Pergunta ID: 721 | Entidade-Foco: dbr:Choctaw
+  ❌ Alucinado: dbo:combattant
+  ✅ Trocado p/: dbp:combatant (Score: 0.66)
+  🔍 Top 3 opções avaliadas: [dbp:combatant (0.66), dbp:combatant1a (0.62), dbp:caption (0.30)]
+
+[REJEITADO] Pergunta ID: 723 | Entidade-Foco: dbr:Moses
+  ❌ Alucinado: dbo:religion
+  ⚠️ Melhor opção encontrada: dbp:parents (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 724 | Entidade-Foco: dbr:Ne_daj_se,_Nina
+  ❌ Alucinado: dbp:firstAired
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.24 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 725 | Entidade-Foco: dbr:2015_MLS_All-Star_Game
+  ❌ Alucinado: dbp:location
+  ✅ Trocado p/: dbo:location (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:location (1.00), dbp:city (0.65), dbo:city (0.65)]
+
+[REJEITADO] Pergunta ID: 728 | Entidade-Foco: dbr:2013–14_Panionios_G.S.S._season
+  ❌ Alucinado: dbo:team
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.11 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 729 | Entidade-Foco: dbr:Charles,_Prince_of_Wales
+  ❌ Alucinado: dbp:president
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.05 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 732 | Entidade-Foco: dbr:Kevin_Tsujihara
+  ❌ Alucinado: dbo:distributor
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.31 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 734 | Entidade-Foco: dbr:Stevens_T._Mason
+  ❌ Alucinado: dbo:deathPlace
+  ✅ Trocado p/: dbp:deathPlace (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:deathPlace (1.00), dbp:birthPlace (0.57), dbo:birthPlace (0.57)]
+
+[CORREÇÃO] Pergunta ID: 735 | Entidade-Foco: dbr:VMF-155
+  ❌ Alucinado: dbp:militaryUnit
+  ✅ Trocado p/: dbo:militaryBranch (Score: 0.76)
+  🔍 Top 3 opções avaliadas: [dbo:militaryBranch (0.76), dbp:unitName (0.66), dbp:garrison (0.47)]
+
+[CORREÇÃO] Pergunta ID: 735 | Entidade-Foco: dbr:VMF-218
+  ❌ Alucinado: dbp:militaryUnit
+  ✅ Trocado p/: dbo:militaryBranch (Score: 0.76)
+  🔍 Top 3 opções avaliadas: [dbo:militaryBranch (0.76), dbp:unitName (0.66), dbo:aircraftFighter (0.41)]
+
+[REJEITADO] Pergunta ID: 737 | Entidade-Foco: dbr:Boeing_F/A-18E/F_Super_Hornet
+  ❌ Alucinado: dbp:products
+  ⚠️ Melhor opção encontrada: dbp:produced (Score: 0.59 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 738 | Entidade-Foco: dbr:Methodist_Central_Hall_Westminster
+  ❌ Alucinado: dbp:district
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 740 | Entidade-Foco: dbr:Probus_(journal)
+  ❌ Alucinado: dbo:language
+  ✅ Trocado p/: dbp:language (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:language (1.00), dbp:history (0.45), dbo:description (0.40)]
+
+[CORREÇÃO] Pergunta ID: 740 | Entidade-Foco: dbr:Ladonia_(micronation)
+  ❌ Alucinado: dbo:target Area
+  ✅ Trocado p/: dbo:area (Score: 0.66)
+  🔍 Top 3 opções avaliadas: [dbo:area (0.66), dbp:areaKm (0.47), dbo:PopulatedPlace/area (0.44)]
+
+[CORREÇÃO] Pergunta ID: 742 | Entidade-Foco: dbr:Worcester_College,_Oxford
+  ❌ Alucinado: dbo:student
+  ✅ Trocado p/: dbp:college (Score: 0.65)
+  🔍 Top 3 opções avaliadas: [dbp:college (0.65), dbo:university (0.65), dbp:university (0.65)]
+
+[REJEITADO] Pergunta ID: 743 | Entidade-Foco: dbr:Donna_Shalala
+  ❌ Alucinado: dbo:position
+  ⚠️ Melhor opção encontrada: dbp:direction (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 744 | Entidade-Foco: dbr:Office_365
+  ❌ Alucinado: dbo:producer
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 745 | Entidade-Foco: dbr:Edsel_Villager
+  ❌ Alucinado: dbo:formerCompany
+  ⚠️ Melhor opção encontrada: dbp:manufacturer (Score: 0.55 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 746 | Entidade-Foco: dbr:Nice_&_Smooth
+  ❌ Alucinado: dbo:collaborating
+  ⚠️ Melhor opção encontrada: dbp:producer (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 746 | Entidade-Foco: dbr:Same_Song_(Digital_Underground_song)
+  ❌ Alucinado: dbp:writer
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 747 | Entidade-Foco: dbr:Tupelo,_Mississippi
+  ❌ Alucinado: dbo:battles
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.37 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 749 | Entidade-Foco: dbr:City_of_Angels
+  ❌ Alucinado: dbp:nickname
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.37 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 750 | Entidade-Foco: dbr:New_York
+  ❌ Alucinado: dbo:playedIn
+  ⚠️ Melhor opção encontrada: dbo:location (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 752 | Entidade-Foco: dbr:Motorpsycho_Nitemare
+  ❌ Alucinado: dbp:subsequentWork
+  ⚠️ Melhor opção encontrada: dbo:Work/runtime (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 752 | Entidade-Foco: dbr:Moondog_Matinee
+  ❌ Alucinado: dbp:composer
+  ⚠️ Melhor opção encontrada: dbp:artist (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 753 | Entidade-Foco: dbr:To_Know_Him_Is_to_Love_Him
+  ❌ Alucinado: dbo:predecessor
+  ⚠️ Melhor opção encontrada: dbo:previousWork (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 754 | Entidade-Foco: dbr:Viacom_(original)
+  ❌ Alucinado: dbo:company
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 755 | Entidade-Foco: dbr:FC_Barcelona
+  ❌ Alucinado: dbo:juvenileClub
+  ✅ Trocado p/: dbp:club (Score: 0.74)
+  🔍 Top 3 opções avaliadas: [dbp:club (0.74), dbo:club (0.74), dbp:clubs (0.64)]
+
+[REJEITADO] Pergunta ID: 757 | Entidade-Foco: dbr:Falmouth_University
+  ❌ Alucinado: dbo:cancellor
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 758 | Entidade-Foco: dbr:WBIG-FM
+  ❌ Alucinado: dbo:playedIn
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 759 | Entidade-Foco: dbr:Arthur_A._Ross
+  ❌ Alucinado: dbp:placeOfBirth
+  ✅ Trocado p/: dbp:birthPlace (Score: 0.93)
+  🔍 Top 3 opções avaliadas: [dbp:birthPlace (0.93), dbo:birthPlace (0.93), dbo:birthYear (0.57)]
+
+[CORREÇÃO] Pergunta ID: 759 | Entidade-Foco: dbr:South_Side_Elevated_Railroad
+  ❌ Alucinado: dbp:location
+  ✅ Trocado p/: dbo:location (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:location (1.00), dbp:locale (0.42), dbp:routes (0.40)]
+
+[REJEITADO] Pergunta ID: 760 | Entidade-Foco: dbr:Worcester_College,_Oxford
+  ❌ Alucinado: dbo:field
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 761 | Entidade-Foco: dbr:Mark_Donaldson_(rugby_player)
+  ❌ Alucinado: dbp:relatives
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 762 | Entidade-Foco: dbr:Petersen_House
+  ❌ Alucinado: dbo:deathPlace
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 763 | Entidade-Foco: dbr:Send_It_On_(Disney's_Friends_for_Change_song)
+  ❌ Alucinado: dbo:openingTheme
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.13 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 765 | Entidade-Foco: dbr:Celluloid_Records
+  ❌ Alucinado: dbo:label
+  ✅ Trocado p/: dbp:label (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:label (1.00), dbo:recordLabel (0.75), dbp:name (0.42)]
+
+[REJEITADO] Pergunta ID: 766 | Entidade-Foco: dbr:Claiborne_Pell
+  ❌ Alucinado: dbp:craft
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 766 | Entidade-Foco: dbr:Ralph_Flanders
+  ❌ Alucinado: dbp:profession
+  ✅ Trocado p/: dbp:occupation (Score: 0.76)
+  🔍 Top 3 opções avaliadas: [dbp:occupation (0.76), dbp:office (0.51), dbo:spouse (0.49)]
+
+[REJEITADO] Pergunta ID: 769 | Entidade-Foco: dbr:Garry_Unger
+  ❌ Alucinado: dbp:players
+  ⚠️ Melhor opção encontrada: dbp:ntlTeam (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 769 | Entidade-Foco: dbr:Martin_Procházka
+  ❌ Alucinado: dbp:players
+  ⚠️ Melhor opção encontrada: dbp:draftTeam (Score: 0.55 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 770 | Entidade-Foco: dbr:Ellen_Lundström
+  ❌ Alucinado: dbp:spouse
+  ✅ Trocado p/: dbo:spouse (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:spouse (1.00), dbo:parent (0.47), dbo:wikiPageWikiLink (0.03)]
+
+[REJEITADO] Pergunta ID: 772 | Entidade-Foco: dbr:Republican_River
+  ❌ Alucinado: dbo:link
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 774 | Entidade-Foco: dbr:Republic_of_Korea_Army
+  ❌ Alucinado: dbo:manufacturer
+  ⚠️ Melhor opção encontrada: dbo:owner (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 776 | Entidade-Foco: dbr:Sony_Music_Entertainment
+  ❌ Alucinado: dbo:selling
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 777 | Entidade-Foco: dbr:Fairmount,_Indiana
+  ❌ Alucinado: dbo:hometown
+  ✅ Trocado p/: dbp:city (Score: 0.69)
+  🔍 Top 3 opções avaliadas: [dbp:city (0.69), dbo:city (0.69), dbo:location (0.62)]
+
+[REJEITADO] Pergunta ID: 782 | Entidade-Foco: dbr:Remote_Desktop_Protocol
+  ❌ Alucinado: dbp:protocol
+  ⚠️ Melhor opção encontrada: dbp:products (Score: 0.35 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 783 | Entidade-Foco: dbr:Al-Muzaffar_Umar
+  ❌ Alucinado: dbp:placeOfBurial
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.10 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 787 | Entidade-Foco: dbr:Kampuchean_United_Front_for_National_Salvation
+  ❌ Alucinado: dbo:union
+  ⚠️ Melhor opção encontrada: dbp:allegiance (Score: 0.48 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 788 | Entidade-Foco: dbr:Judge_Advocate_General's_Corps,_United_States_Army
+  ❌ Alucinado: dbp:education
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 789 | Entidade-Foco: dbr:San_Francisco
+  ❌ Alucinado: dbp:hubs
+  ⚠️ Melhor opção encontrada: dbp:s (Score: 0.37 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 790 | Entidade-Foco: dbr:Trump_Productions
+  ❌ Alucinado: dbo:executiveProducer
+  ⚠️ Melhor opção encontrada: dbp:company (Score: 0.44 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 790 | Entidade-Foco: dbr:The_Ultimate_Merger
+  ❌ Alucinado: dbo:importantPerson
+  ⚠️ Melhor opção encontrada: dbp:creator (Score: 0.36 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 791 | Entidade-Foco: dbr:Colorado_wine
+  ❌ Alucinado: dbo:officialName
+  ✅ Trocado p/: dbp:officialName (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:officialName (1.00), dbp:name (0.59), dbo:description (0.30)]
+
+[REJEITADO] Pergunta ID: 793 | Entidade-Foco: dbr:Google_Videos
+  ❌ Alucinado: dbo:developer
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.27 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 794 | Entidade-Foco: dbr:John_Tyler,_Sr.
+  ❌ Alucinado: dbp:children
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: -0.00 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 797 | Entidade-Foco: dbr:City_council
+  ❌ Alucinado: dbo:governedBy
+  ✅ Trocado p/: dbo:governingBody (Score: 0.73)
+  🔍 Top 3 opções avaliadas: [dbo:governingBody (0.73), dbp:governingBody (0.73), dbp:legislature (0.50)]
+
+[REJEITADO] Pergunta ID: 798 | Entidade-Foco: dbr:Mausoleum_of_Augustus
+  ❌ Alucinado: dbo:religion
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.33 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 803 | Entidade-Foco: dbr:East_Tilbury
+  ❌ Alucinado: dbo:citizenship
+  ⚠️ Melhor opção encontrada: dbp:country (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 804 | Entidade-Foco: dbr:The_Beauty_Inside
+  ❌ Alucinado: dbo:platform
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.30 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 804 | Entidade-Foco: dbr:Nord_(video_game)
+  ❌ Alucinado: dbp:distributor
+  ⚠️ Melhor opção encontrada: dbp:products (Score: 0.47 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 809 | Entidade-Foco: dbr:Ford_Air_Transport_Service
+  ❌ Alucinado: dbp:parentCompany
+  ✅ Trocado p/: dbo:parentCompany (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:parentCompany (1.00), dbp:parent (0.72), dbo:industry (0.52)]
+
+[REJEITADO] Pergunta ID: 811 | Entidade-Foco: dbr:Bannock_(food)
+  ❌ Alucinado: dbp:region
+  ⚠️ Melhor opção encontrada: dbo:wikiPageDisambiguates (Score: 0.13 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 811 | Entidade-Foco: dbr:Spaghetti_squash
+  ❌ Alucinado: dbp:region
+  ⚠️ Melhor opção encontrada: dbp:origin (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 812 | Entidade-Foco: dbr:Edwin_F._Hunter
+  ❌ Alucinado: dbo:manufacturer
+  ⚠️ Melhor opção encontrada: dbp:office (Score: 0.31 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 812 | Entidade-Foco: dbr:Pierre_R._Graham
+  ❌ Alucinado: dbo:manufacturer
+  ⚠️ Melhor opção encontrada: dbo:profession (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 817 | Entidade-Foco: dbr:Jo_Garcia
+  ❌ Alucinado: dbp:knownFor
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 819 | Entidade-Foco: dbr:Jon_Speelman
+  ❌ Alucinado: dbp:field
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.39 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 819 | Entidade-Foco: dbr:Polytechnic_University_of_the_Philippines_Taguig
+  ❌ Alucinado: dbp:sport
+  ✅ Trocado p/: dbp:sportsNickname (Score: 0.61)
+  🔍 Top 3 opções avaliadas: [dbp:sportsNickname (0.61), dbp:athleticsAffiliations (0.44), dbp:country (0.43)]
+
+[REJEITADO] Pergunta ID: 825 | Entidade-Foco: dbr:Claris
+  ❌ Alucinado: dbo:producer
+  ⚠️ Melhor opção encontrada: dbp:industry (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 826 | Entidade-Foco: dbr:Cowombat_Flat
+  ❌ Alucinado: dbo:mouthMouth
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 826 | Entidade-Foco: dbr:Murray_Mouth
+  ❌ Alucinado: dbo:source
+  ⚠️ Melhor opção encontrada: dbp:mouth (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 829 | Entidade-Foco: dbr:Mojo_Priest
+  ❌ Alucinado: dbo:release
+  ✅ Trocado p/: dbp:released (Score: 0.90)
+  🔍 Top 3 opções avaliadas: [dbp:released (0.90), dbp:producer (0.39), dbp:name (0.34)]
+
+[REJEITADO] Pergunta ID: 831 | Entidade-Foco: dbr:Invasion_of_Buwat
+  ❌ Alucinado: dbp:commander
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 833 | Entidade-Foco: dbr:Languages_of_Ethiopia
+  ❌ Alucinado: dbo:nationality
+  ⚠️ Melhor opção encontrada: dbp:country (Score: 0.60 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 834 | Entidade-Foco: dbr:Kevin_Jonas
+  ❌ Alucinado: dbp:currentMembers
+  ⚠️ Melhor opção encontrada: dbo:bandMember (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 834 | Entidade-Foco: dbr:Joe_Jonas
+  ❌ Alucinado: dbp:currentMembers
+  ⚠️ Melhor opção encontrada: dbo:bandMember (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 836 | Entidade-Foco: dbr:Human
+  ❌ Alucinado: dbo:author
+  ⚠️ Melhor opção encontrada: dbp:title (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 843 | Entidade-Foco: dbr:Sino-French_War
+  ❌ Alucinado: dbp:territorium
+  ⚠️ Melhor opção encontrada: dbp:place (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 848 | Entidade-Foco: dbr:Linda_Jenness
+  ❌ Alucinado: dbp:origin
+  ⚠️ Melhor opção encontrada: dbo:birthPlace (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 850 | Entidade-Foco: dbr:Fusajiro_Yamauchi
+  ❌ Alucinado: dbp:foundedBy
+  ✅ Trocado p/: dbo:foundedBy (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:foundedBy (1.00), dbp:founder (0.74), dbp:predecessor (0.36)]
+
+[CORREÇÃO] Pergunta ID: 851 | Entidade-Foco: dbr:Cumaná
+  ❌ Alucinado: dbp:city
+  ✅ Trocado p/: dbo:city (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:city (1.00), dbp:nearestCity (0.70), dbo:nearestCity (0.70)]
+
+[CORREÇÃO] Pergunta ID: 853 | Entidade-Foco: dbr:Western_pygmy_blue
+  ❌ Alucinado: dbo:academicAuthority
+  ✅ Trocado p/: dbp:authority (Score: 0.77)
+  🔍 Top 3 opções avaliadas: [dbp:authority (0.77), dbp:genus (0.24), dbp:image (0.19)]
+
+[REJEITADO] Pergunta ID: 855 | Entidade-Foco: dbr:John_Robert_Woodyard
+  ❌ Alucinado: dbp:advising
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.25 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 856 | Entidade-Foco: dbr:2016_Fort_Lauderdale_Strikers_season
+  ❌ Alucinado: dbo:launchSite
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.30 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 856 | Entidade-Foco: dbr:Juno_I
+  ❌ Alucinado: dbo:ground
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.34 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 861 | Entidade-Foco: dbr:Ben_Nighthorse_Campbell
+  ❌ Alucinado: dbp:location
+  ⚠️ Melhor opção encontrada: dbp:state (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 861 | Entidade-Foco: dbr:Peetz_Table_Wind_Energy_Center
+  ❌ Alucinado: dbp:state
+  ⚠️ Melhor opção encontrada: dbp:country (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 862 | Entidade-Foco: dbr:North_Sea
+  ❌ Alucinado: dbo:flow
+  ✅ Trocado p/: dbp:inflow (Score: 0.67)
+  🔍 Top 3 opções avaliadas: [dbp:inflow (0.67), dbo:inflow (0.67), dbp:outflow (0.66)]
+
+[CORREÇÃO] Pergunta ID: 868 | Entidade-Foco: dbr:Bobby_Hoppe
+  ❌ Alucinado: dbp:pastTeam
+  ✅ Trocado p/: dbo:formerTeam (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbo:formerTeam (0.70), dbp:pastteams (0.64), dbp:player (0.45)]
+
+[REJEITADO] Pergunta ID: 868 | Entidade-Foco: dbr:Charlie_Justice_(American_football_player)
+  ❌ Alucinado: dbp:pastTeam
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 869 | Entidade-Foco: dbr:Augustus
+  ❌ Alucinado: dbp:associate
+  ⚠️ Melhor opção encontrada: dbo:spouse (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 870 | Entidade-Foco: dbr:Indian_general_election,_2004_(Andhra_Pradesh)
+  ❌ Alucinado: dbo:party
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 870 | Entidade-Foco: dbr:Indian_general_election,_2004_(Delhi)
+  ❌ Alucinado: dbo:party
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 871 | Entidade-Foco: dbr:Trinity_House
+  ❌ Alucinado: dbo:board
+  ⚠️ Melhor opção encontrada: dbp:logo (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 872 | Entidade-Foco: dbr:Fredis_Refunjol
+  ❌ Alucinado: dbp:leaderName
+  ⚠️ Melhor opção encontrada: dbp:governor (Score: 0.51 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 873 | Entidade-Foco: dbr:Sundridge_(horse)
+  ❌ Alucinado: dbp:grandchildren
+  ⚠️ Melhor opção encontrada: dbo:grandsire (Score: 0.42 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Indian_Ocean
+
+[REJEITADO] Pergunta ID: 874 | Entidade-Foco: dbr:North-Western_Province,_Zambia
+  ❌ Alucinado: dbo:riverMouth
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.28 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Watkins_Glen,_New_York
+
+[REJEITADO] Pergunta ID: 877 | Entidade-Foco: dbr:Holmes_Colbert
+  ❌ Alucinado: dbp:ethinicity
+  ⚠️ Melhor opção encontrada: dbp:occupation (Score: 0.29 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 877 | Entidade-Foco: dbr:Linda_Hogan
+  ❌ Alucinado: dbp:stateOfOrigin
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.16 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Jamiatu_Muslim_Mindanao
+
+[CORREÇÃO] Pergunta ID: 882 | Entidade-Foco: dbr:Nihoa
+  ❌ Alucinado: dbo:nearestCity
+  ✅ Trocado p/: dbp:nearestCity (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:nearestCity (1.00), dbp:city (0.70), dbp:location (0.54)]
+
+[CORREÇÃO] Pergunta ID: 884 | Entidade-Foco: dbr:Naval_Air_Facility_Adak
+  ❌ Alucinado: dbp:owner
+  ✅ Trocado p/: dbo:owner (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:owner (1.00), dbp:ownership (0.86), dbp:name (0.40)]
+
+[REJEITADO] Pergunta ID: 885 | Entidade-Foco: dbr:Golden_Globe_Award
+  ❌ Alucinado: dbo:award
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.10 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 886 | Entidade-Foco: dbr:Sanath_Weerakoon
+  ❌ Alucinado: dbp:state
+  ⚠️ Melhor opção encontrada: dbp:country (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 887 | Entidade-Foco: dbr:N-tv
+  ❌ Alucinado: dbo:sisterName
+  ✅ Trocado p/: dbp:name (Score: 0.61)
+  🔍 Top 3 opções avaliadas: [dbp:name (0.61), dbp:sisterChannels (0.56), dbp:parent (0.44)]
+
+[CORREÇÃO] Pergunta ID: 888 | Entidade-Foco: dbr:God_Defend_New_Zealand
+  ❌ Alucinado: dbo:nationalHymne
+  ✅ Trocado p/: dbp:anthemTitle (Score: 0.66)
+  🔍 Top 3 opções avaliadas: [dbp:anthemTitle (0.66), dbp:anthem2Title (0.57), dbp:composer (0.42)]
+
+[CORREÇÃO] Pergunta ID: 889 | Entidade-Foco: dbr:Zambia
+  ❌ Alucinado: dbo:riverMouth
+  ✅ Trocado p/: dbo:mouthPlace (Score: 0.64)
+  🔍 Top 3 opções avaliadas: [dbo:mouthPlace (0.64), dbo:mouthMountain (0.61), dbp:bankOf (0.39)]
+
+[REJEITADO] Pergunta ID: 890 | Entidade-Foco: dbr:Kumta
+  ❌ Alucinado: dbo:affiliation
+  ⚠️ Melhor opção encontrada: dbp:leaderTitle (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 890 | Entidade-Foco: dbr:Indian_general_election,_2004_(Andhra_Pradesh)
+  ❌ Alucinado: dbp:party
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.07 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 891 | Entidade-Foco: dbr:Trinity_House
+  ❌ Alucinado: dbo:board
+  ⚠️ Melhor opção encontrada: dbp:logo (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 891 | Entidade-Foco: dbr:Royal_Society
+  ❌ Alucinado: dbo:board
+  ⚠️ Melhor opção encontrada: dbp:membership (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 895 | Entidade-Foco: dbr:Target_Field_(Metro_Transit_station)
+  ❌ Alucinado: dbp:owner
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.12 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 897 | Entidade-Foco: dbr:Winston_Bryant
+  ❌ Alucinado: dbo: lieutenant
+  ✅ Trocado p/: dbp:lieutenant (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbp:lieutenant (1.00), dbo:lieutenant (1.00), dbp:rank (0.52)]
+
+[CORREÇÃO] Pergunta ID: 899 | Entidade-Foco: dbr:Broca's_Brain
+  ❌ Alucinado: dbp:subject
+  ✅ Trocado p/: dbp:subjects (Score: 0.84)
+  🔍 Top 3 opções avaliadas: [dbp:subjects (0.84), dbp:language (0.46), dbo:description (0.40)]
+
+[REJEITADO] Pergunta ID: 900 | Entidade-Foco: dbr:GetTV
+  ❌ Alucinado: dbp:parentOrganisation
+  ⚠️ Melhor opção encontrada: dbo:wikiPageDisambiguates (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 902 | Entidade-Foco: dbr:Mumbai_Vadodara_Expressway
+  ❌ Alucinado: dbo:routeEnd
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 902 | Entidade-Foco: dbr:North–South_Transport_Corridor
+  ❌ Alucinado: dbo:routeEnd
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 904 | Entidade-Foco: dbr:Bill_Peters_(ice_hockey)
+  ❌ Alucinado: dbp:headCoach
+  ✅ Trocado p/: dbo:coach (Score: 0.88)
+  🔍 Top 3 opções avaliadas: [dbo:coach (0.88), dbp:coach (0.88), dbp:teamCoach (0.83)]
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Ananda_College
+
+[CORREÇÃO] Pergunta ID: 906 | Entidade-Foco: dbr:Cam_Plante
+  ❌ Alucinado: dbp:team
+  ✅ Trocado p/: dbp:draftTeam (Score: 0.65)
+  🔍 Top 3 opções avaliadas: [dbp:draftTeam (0.65), dbo:draftTeam (0.65), dbo:formerTeam (0.54)]
+
+[REJEITADO] Pergunta ID: 906 | Entidade-Foco: dbr:Wilfred_McDonald
+  ❌ Alucinado: dbp:team
+  ⚠️ Melhor opção encontrada: dbo:party (Score: 0.49 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 907 | Entidade-Foco: dbr:Warner_Bros._Television
+  ❌ Alucinado: dbo:capital
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 908 | Entidade-Foco: dbr:Fox_Broadcasting_Company
+  ❌ Alucinado: dbp:judges
+  ⚠️ Melhor opção encontrada: dbp:broadcaster (Score: 0.40 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 908 | Entidade-Foco: dbr:Randy_Jackson
+  ❌ Alucinado: dbp:judges
+  ✅ Trocado p/: dbo:showJudge (Score: 0.69)
+  🔍 Top 3 opções avaliadas: [dbo:showJudge (0.69), dbo:producer (0.39), dbp:producer (0.39)]
+
+[CORREÇÃO] Pergunta ID: 910 | Entidade-Foco: dbr:Phil-Ellena
+  ❌ Alucinado: dbp:city
+  ✅ Trocado p/: dbo:city (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:city (1.00), dbp:locationCity (0.82), dbo:location (0.65)]
+
+[REJEITADO] Pergunta ID: 911 | Entidade-Foco: dbr:Spanish_language
+  ❌ Alucinado: dbo:locationCountry
+  ⚠️ Melhor opção encontrada: dbp:regional (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 912 | Entidade-Foco: dbr:Linda_Hogan
+  ❌ Alucinado: dbo:ethnicity
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.26 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 912 | Entidade-Foco: dbr:Northwest_Indian_War
+  ❌ Alucinado: dbo:combattant
+  ✅ Trocado p/: dbo:combatant (Score: 0.66)
+  🔍 Top 3 opções avaliadas: [dbo:combatant (0.66), dbp:combatant (0.66), dbo:battle (0.54)]
+
+[CORREÇÃO] Pergunta ID: 913 | Entidade-Foco: dbr:Gimhae_International_Airport
+  ❌ Alucinado: dbo:airline
+  ✅ Trocado p/: dbp:iata (Score: 0.70)
+  🔍 Top 3 opções avaliadas: [dbp:iata (0.70), dbo:targetAirport (0.51), dbo:hubAirport (0.47)]
+
+[REJEITADO] Pergunta ID: 914 | Entidade-Foco: dbr:GetTV
+  ❌ Alucinado: dbo:owner
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.12 - ABAIXO DO LIMITE 0.6)
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Papeete
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Dave_Bing
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Ron_Reed
+
+[CORREÇÃO] Pergunta ID: 918 | Entidade-Foco: dbr:Live_in_Detroit,_MI
+  ❌ Alucinado: dbo:recordedBy
+  ✅ Trocado p/: dbp:recorded (Score: 0.81)
+  🔍 Top 3 opções avaliadas: [dbp:recorded (0.81), dbp:producer (0.49), dbp:released (0.43)]
+
+[REJEITADO] Pergunta ID: 919 | Entidade-Foco: dbr:Judge_Advocate_General's_Corps,_United_States_Army
+  ❌ Alucinado: dbo:academicArtist
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 921 | Entidade-Foco: dbr:Northeast_Library
+  ❌ Alucinado: dbp:city
+  ✅ Trocado p/: dbo:city (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:city (1.00), dbp:locationCity (0.82), dbo:address (0.43)]
+
+[REJEITADO] Pergunta ID: 922 | Entidade-Foco: dbr:Union_of_Cambodian_Democrats
+  ❌ Alucinado: dbp:hubs
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.26 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 924 | Entidade-Foco: dbr:Henry_Clay
+  ❌ Alucinado: dbo:profession
+  ⚠️ Melhor opção encontrada: dbo:education (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 924 | Entidade-Foco: dbr:William_Luther_Hill
+  ❌ Alucinado: dbo:order
+  ⚠️ Melhor opção encontrada: dbp:preceded (Score: 0.48 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 925 | Entidade-Foco: dbr:Ron_Grainer
+  ❌ Alucinado: dbp:related
+  ⚠️ Melhor opção encontrada: dbp:name (Score: 0.43 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 926 | Entidade-Foco: dbr:Micronesia
+  ❌ Alucinado: dbp:related
+  ✅ Trocado p/: dbo:related (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:related (1.00), dbo:description (0.38), dbp:location (0.37)]
+
+[CORREÇÃO] Pergunta ID: 927 | Entidade-Foco: dbr:Essex
+  ❌ Alucinado: dbp:mouthMountain
+  ✅ Trocado p/: dbo:mouthMountain (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:mouthMountain (1.00), dbo:mouthPlace (0.67), dbp:town (0.41)]
+
+[REJEITADO] Pergunta ID: 928 | Entidade-Foco: dbr:Indy_PopCon
+  ❌ Alucinado: dbp:placeOfDeath
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.09 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 928 | Entidade-Foco: dbr:Louis_LeCocq
+  ❌ Alucinado: dbp:placeOfDeath
+  ✅ Trocado p/: dbp:deathPlace (Score: 0.85)
+  🔍 Top 3 opções avaliadas: [dbp:deathPlace (0.85), dbo:deathPlace (0.85), dbp:birthPlace (0.59)]
+
+[CORREÇÃO] Pergunta ID: 931 | Entidade-Foco: dbr:Allgemeine_SS
+  ❌ Alucinado: dbp:leader
+  ✅ Trocado p/: dbo:leader (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:leader (1.00), dbp:minister1Name (0.40), dbp:branch (0.38)]
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Giorgos_Kaminis
+[FALHA DBpedia] Não foi possível consultar a entidade: dbr:Metro_Transit_(Minnesota)
+
+[REJEITADO] Pergunta ID: 934 | Entidade-Foco: dbr:Frank_Miller_(comics)
+  ❌ Alucinado: dbo:creator
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.11 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 935 | Entidade-Foco: dbr:Terminator_2:_Judgment_Day
+  ❌ Alucinado: dbo:portrait
+  ⚠️ Melhor opção encontrada: dbp:image (Score: 0.50 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 935 | Entidade-Foco: dbr:Josh_Friedman
+  ❌ Alucinado: dbo:portrait
+  ⚠️ Melhor opção encontrada: dbo:thumbnail (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 936 | Entidade-Foco: dbr:Spain..._on_the_Road_Again
+  ❌ Alucinado: dbo:birthPlace
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.56 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 938 | Entidade-Foco: dbr:Trevor_Peacock
+  ❌ Alucinado: dbp:narrator
+  ⚠️ Melhor opção encontrada: dbp:writer (Score: 0.58 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 939 | Entidade-Foco: dbr:Leonard_Lerman
+  ❌ Alucinado: dbo:supervisedBy
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.32 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 940 | Entidade-Foco: dbr:Quick_bread
+  ❌ Alucinado: dbp:foundationPlace
+  ⚠️ Melhor opção encontrada: dbp:direction (Score: 0.23 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 942 | Entidade-Foco: dbr:Australian_Alps
+  ❌ Alucinado: dbo:riverMouth
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.28 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 943 | Entidade-Foco: dbr:John_Roberts
+  ❌ Alucinado: dbo:governedBy
+  ⚠️ Melhor opção encontrada: dbp:president (Score: 0.48 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 944 | Entidade-Foco: dbr:San_Diego_Comic-Con_International
+  ❌ Alucinado: dbp:location
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.14 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 946 | Entidade-Foco: dbr:House_of_Representatives_of_the_Philippines
+  ❌ Alucinado: dbo:employer
+  ⚠️ Melhor opção encontrada: dbp:office (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 948 | Entidade-Foco: dbr:Rosemont,_Illinois
+  ❌ Alucinado: dbo:organization
+  ⚠️ Melhor opção encontrada: dbp:headquarters (Score: 0.54 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 951 | Entidade-Foco: dbr:German-occupied_Europe
+  ❌ Alucinado: dbo:leaderName
+  ✅ Trocado p/: dbp:leader (Score: 0.84)
+  🔍 Top 3 opções avaliadas: [dbp:leader (0.84), dbp:titleLeader (0.81), dbp:yearLeader (0.70)]
+
+[CORREÇÃO] Pergunta ID: 953 | Entidade-Foco: dbr:Simon_Ferro
+  ❌ Alucinado: dbo:predecessor
+  ✅ Trocado p/: dbo:successor (Score: 0.74)
+  🔍 Top 3 opções avaliadas: [dbo:successor (0.74), dbp:after (0.33), dbo:wikiPageWikiLink (0.07)]
+
+[REJEITADO] Pergunta ID: 954 | Entidade-Foco: dbr:World_War_I
+  ❌ Alucinado: dbo:author
+  ⚠️ Melhor opção encontrada: dbo:notableWork (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 955 | Entidade-Foco: dbr:John_Drayton
+  ❌ Alucinado: dbp:offices
+  ✅ Trocado p/: dbp:office (Score: 0.83)
+  🔍 Top 3 opções avaliadas: [dbp:office (0.83), dbp:appointer (0.41), dbo:birthPlace (0.34)]
+
+[CORREÇÃO] Pergunta ID: 955 | Entidade-Foco: dbr:William_Clark
+  ❌ Alucinado: dbp:offices
+  ✅ Trocado p/: dbp:office (Score: 0.83)
+  🔍 Top 3 opções avaliadas: [dbp:office (0.83), dbo:employer (0.52), dbp:occupation (0.48)]
+
+[REJEITADO] Pergunta ID: 956 | Entidade-Foco: dbr:Oahu_Railway_and_Land_Company
+  ❌ Alucinado: dbp:governingBody
+  ⚠️ Melhor opção encontrada: dbo:headquarter (Score: 0.38 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 959 | Entidade-Foco: dbr:Pirates_of_the_Caribbean:_Dead_Man's_Chest_(soundtrack)
+  ❌ Alucinado: dbp:writer
+  ⚠️ Melhor opção encontrada: dbp:producer (Score: 0.53 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 961 | Entidade-Foco: dbr:David_Bowens
+  ❌ Alucinado: dbo:team
+  ⚠️ Melhor opção encontrada: dbp:player (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 963 | Entidade-Foco: dbr:Suicide_by_hanging
+  ❌ Alucinado: dbp:model
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.48 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 965 | Entidade-Foco: dbr:Mishal_Raheja
+  ❌ Alucinado: dbp:birthPlace
+  ⚠️ Melhor opção encontrada: dbo:relative (Score: 0.41 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 965 | Entidade-Foco: dbr:New_India_Assurance
+  ❌ Alucinado: dbp:houses
+  ⚠️ Melhor opção encontrada: dbp:homepage (Score: 0.45 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 966 | Entidade-Foco: dbr:ATO_Records
+  ❌ Alucinado: dbo:subsequentWork
+  ⚠️ Melhor opção encontrada: dbo:productionCompany (Score: 0.29 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 968 | Entidade-Foco: dbr:La_Marseillaise
+  ❌ Alucinado: dbo:nationalHymna
+  ✅ Trocado p/: dbp:nationalAnthem (Score: 0.75)
+  🔍 Top 3 opções avaliadas: [dbp:nationalAnthem (0.75), dbo:anthem (0.70), dbp:anthem (0.70)]
+
+[CORREÇÃO] Pergunta ID: 969 | Entidade-Foco: dbr:Jim_Farley_(businessman)
+  ❌ Alucinado: dbp:relative
+  ✅ Trocado p/: dbo:relative (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:relative (1.00), dbp:relatives (0.66), dbo:birthPlace (0.41)]
+
+[CORREÇÃO] Pergunta ID: 971 | Entidade-Foco: dbr:Blanche_Bruce
+  ❌ Alucinado: dbp:workplace
+  ✅ Trocado p/: dbp:office (Score: 0.72)
+  🔍 Top 3 opções avaliadas: [dbp:office (0.72), dbp:education (0.41), dbo:education (0.41)]
+
+[REJEITADO] Pergunta ID: 971 | Entidade-Foco: dbr:John_Franklin_Miller_(senator)
+  ❌ Alucinado: dbp:workplace
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 972 | Entidade-Foco: dbr:1998_Baltimore_Ravens_season
+  ❌ Alucinado: dbo:formerTeam
+  ⚠️ Melhor opção encontrada: dbp:team (Score: 0.54 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 972 | Entidade-Foco: dbr:Chicago_Bears
+  ❌ Alucinado: dbp:debutteam
+  ⚠️ Melhor opção encontrada: dbp:pastteams (Score: 0.55 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 973 | Entidade-Foco: dbr:Ikelenge_District
+  ❌ Alucinado: dbo:sourceCountry
+  ✅ Trocado p/: dbo:country (Score: 0.73)
+  🔍 Top 3 opções avaliadas: [dbo:country (0.73), dbp:source1Location (0.56), dbo:state (0.42)]
+
+[CORREÇÃO] Pergunta ID: 973 | Entidade-Foco: dbr:Zambia
+  ❌ Alucinado: dbp:sourceLocation
+  ✅ Trocado p/: dbp:source1Location (Score: 0.71)
+  🔍 Top 3 opções avaliadas: [dbp:source1Location (0.71), dbp:location (0.68), dbo:location (0.68)]
+
+[REJEITADO] Pergunta ID: 975 | Entidade-Foco: dbr:Koay_Teng_Hai
+  ❌ Alucinado: dbp:fields
+  ⚠️ Melhor opção encontrada: dbo:description (Score: 0.37 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 976 | Entidade-Foco: dbr:Alton_Ochsner
+  ❌ Alucinado: dbp:institutions
+  ✅ Trocado p/: dbo:institution (Score: 0.85)
+  🔍 Top 3 opções avaliadas: [dbo:institution (0.85), dbp:workInstitutions (0.77), dbo:education (0.51)]
+
+[CORREÇÃO] Pergunta ID: 977 | Entidade-Foco: dbr:Monty_Python
+  ❌ Alucinado: dbp:author
+  ✅ Trocado p/: dbo:author (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:author (1.00), dbo:writer (0.70), dbp:writer (0.70)]
+
+[REJEITADO] Pergunta ID: 978 | Entidade-Foco: dbr:Mark_Twain_Tonight
+  ❌ Alucinado: dbp:coverArtist
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.08 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 978 | Entidade-Foco: dbr:The_Adventures_of_Tom_Sawyer
+  ❌ Alucinado: dbp:coverArtist
+  ⚠️ Melhor opção encontrada: dbp:author (Score: 0.48 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 979 | Entidade-Foco: dbr:Georg_Meissner
+  ❌ Alucinado: dbp:academicAdvisor
+  ✅ Trocado p/: dbp:doctoralAdvisor (Score: 0.86)
+  🔍 Top 3 opções avaliadas: [dbp:doctoralAdvisor (0.86), dbo:doctoralAdvisor (0.86), dbp:occupation (0.38)]
+
+[CORREÇÃO] Pergunta ID: 979 | Entidade-Foco: dbr:Karl_Ewald_Hasse
+  ❌ Alucinado: dbp:academicAdvisor
+  ✅ Trocado p/: dbo:academicAdvisor (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:academicAdvisor (1.00), dbp:academicAdvisors (0.90), dbo:doctoralAdvisor (0.86)]
+
+[REJEITADO] Pergunta ID: 980 | Entidade-Foco: dbr:National_Geographic_(magazine)
+  ❌ Alucinado: dbo:residence
+  ⚠️ Melhor opção encontrada: dbo:wikiPageRedirects (Score: 0.10 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 981 | Entidade-Foco: dbr:Georg_Meissner
+  ❌ Alucinado: dbp:doctoralOverseath
+  ⚠️ Melhor opção encontrada: dbo:doctoralAdvisor (Score: 0.60 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 983 | Entidade-Foco: dbr:INS_Viraat_(R22)
+  ❌ Alucinado: dbo:homePort
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.06 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 983 | Entidade-Foco: dbr:Trishna_(yacht)
+  ❌ Alucinado: dbo:homePort
+  ✅ Trocado p/: dbo:homeport (Score: 0.79)
+  🔍 Top 3 opções avaliadas: [dbo:homeport (0.79), dbp:shipHomeport (0.64), dbp:shipCountry (0.29)]
+
+[CORREÇÃO] Pergunta ID: 985 | Entidade-Foco: dbr:Miguel_de_Cervantes
+  ❌ Alucinado: dbp:writer
+  ✅ Trocado p/: dbo:writer (Score: 1.00)
+  🔍 Top 3 opções avaliadas: [dbo:writer (1.00), dbp:author (0.70), dbo:author (0.70)]
+
+[REJEITADO] Pergunta ID: 987 | Entidade-Foco: dbr:Eugene_T._Mahoney_State_Park
+  ❌ Alucinado: dbo:state
+  ⚠️ Melhor opção encontrada: dbp:location (Score: 0.57 - ABAIXO DO LIMITE 0.6)
+
+[CORREÇÃO] Pergunta ID: 988 | Entidade-Foco: dbr:Jaime_Bateman_Cayón
+  ❌ Alucinado: dbp:placeOfDeath
+  ✅ Trocado p/: dbp:deathPlace (Score: 0.85)
+  🔍 Top 3 opções avaliadas: [dbp:deathPlace (0.85), dbo:deathPlace (0.85), dbp:birthPlace (0.59)]
+
+[REJEITADO] Pergunta ID: 989 | Entidade-Foco: dbr:Harry_Connick,_Jr.
+  ❌ Alucinado: dbp:judges
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.05 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 991 | Entidade-Foco: dbr:WPC_Dynamo_Moscow
+  ❌ Alucinado: dbo:deathPlace
+  ⚠️ Melhor opção encontrada: dbp:city (Score: 0.48 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 991 | Entidade-Foco: dbr:Tigran_Petrosian
+  ❌ Alucinado: dbo:arena
+  ⚠️ Melhor opção encontrada: dbp:champion (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 992 | Entidade-Foco: dbr:LoDaisKa_Site
+  ❌ Alucinado: dbp:nearestCity
+  ⚠️ Melhor opção encontrada: dbo:wikiPageWikiLink (Score: 0.03 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 993 | Entidade-Foco: dbr:Choi_Tu-son
+  ❌ Alucinado: dbo:commander
+  ⚠️ Melhor opção encontrada: dbp:minister (Score: 0.46 - ABAIXO DO LIMITE 0.6)
+
+[REJEITADO] Pergunta ID: 997 | Entidade-Foco: dbr:Easy_Street_(film)
+  ❌ Alucinado: dbo:editing
+  ⚠️ Melhor opção encontrada: dbp:wordnet_type (Score: 0.10 - ABAIXO DO LIMITE 0.6)
